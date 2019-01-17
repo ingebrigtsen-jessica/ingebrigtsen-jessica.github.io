@@ -28,4 +28,5 @@ let x = d.getDate();
 let y = d.getFullYear();
 let m = month[d.getMonth()];
 
-document.getElementById("currentDate").innerHTML = n + ", " + x + " " + m + " " + y;
+document.getElementById("currentDay").innerHTML = n;
+document.getElementById("currentDate").innerHTML = m + " " + x + ", " + y;
