@@ -36,10 +36,9 @@
         <!--Demonstrates Conditionals and Loops-->
         <div class="guessing">
             <h3>Number Game</h3>
-            <p>I am thinking of a number between 1-25.<br>
-                You have 4 tries to guess what it is!</p>
-            <p> Enter your guess here: <input type="text" size="10px;"></p>
-                <button onclick="numberFunction()" class="numberbtn">Check</button>
+            <p>I am thinking of a number between 0-5.</p>
+            <p> Enter your guess here: <input type="text" size="5px" name="guess" id="guess"></p>
+                <button onclick="numberFunction(document.getElementById('guess').value)" class="numberbtn">Check</button>
                 <p id="results"></p>
         </div>
         <!--guessing-->
@@ -47,6 +46,7 @@
     <!--container-->
     <script src="scripts/currentDate.js"></script>
     <script src="scripts/dropdown.js"></script>
+    <script src="scripts/guessinggame.js"></script>
 </body>
 
 </html>
