@@ -1,0 +1,18 @@
+*{
+    background-color: #4e6260
+    ;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: #C5F5F0;
+    font-size: 3rem;
+}
