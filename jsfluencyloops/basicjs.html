@@ -8,29 +8,41 @@
     <title>Basic JavaScript Skills</title>
     <meta name="javascript Skills" content="Basic JavaScript Skills">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cDancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <h1>JavaScript Basic Skills</h1>
+        <!--Demonstrates Arrays-->
         <div id="today">
             <h2>Today's date is: </h2>
             <p><span id="currentDay"></span></p>
             <p><span id="currentDate"></span></p>
         </div>
         <!--today-->
+        <!--Demonstrates a Function-->
         <div class="menu">
             <ul class="dropdown">
-            <button onclick="dropFunction()" class="dropbtn">Dropdown Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-               <li><a href="#">Option 1</a></li> 
-               <li><a href="#">Option 2</a></li>
-               <li><a href="#">Option 3</a></li>
-            </div>
+                <button onclick="dropFunction()" class="dropbtn">Dropdown Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                </div>
             </ul>
         </div>
-        <!--dropdown-->
+        <!--menu-->
+        <!--Demonstrates Conditionals and Loops-->
+        <div class="guessing">
+            <h3>Number Game</h3>
+            <p>I am thinking of a number between 1-25.<br>
+                You have 4 tries to guess what it is!</p>
+            <p> Enter your guess here: <input type="text" size="10px;"></p>
+                <button onclick="numberFunction()" class="numberbtn">Check</button>
+                <p id="results"></p>
+        </div>
+        <!--guessing-->
     </div>>
     <!--container-->
     <script src="scripts/currentDate.js"></script>
