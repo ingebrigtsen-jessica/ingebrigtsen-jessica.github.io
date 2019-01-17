@@ -1,11 +1,15 @@
-body{
+body {
     background-color: #4e6260;
     font-family: 'Amatic SC', cursive;
 }
 
+/***************Grid Container************/
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1.25rem;
+    ;
 }
 
 h1 {
@@ -17,9 +21,13 @@ h1 {
     font-size: 3rem;
 }
 
+/************Arrays*******************/
+
 #today {
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
     margin-left: 2rem;
     border: 2px dashed #C5F5F0;
     text-align: center;
@@ -42,4 +50,72 @@ h2 {
 
 #currentDate {
     font-size: 1.5rem;
+}
+
+/*****************Drop Down Function*****************/
+
+.menu {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+/*Button*/
+
+.dropbtn {
+    background-color: #f5c5ca;
+    color: #4e6260;
+    margin: auto;
+    width: 135px;
+    padding: .25rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #dcb1b5;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-flow: column;
+}
+
+#myDropdown li {
+    padding: .2rem;
+
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    min-width: 30%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
 }
