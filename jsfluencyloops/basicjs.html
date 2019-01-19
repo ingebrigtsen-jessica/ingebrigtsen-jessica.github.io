@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, 
-    maxiumum-scale=1">
+    maximum-scale=1">
     <title>Basic JavaScript Skills</title>
     <meta name="javascript Skills" content="Basic JavaScript Skills">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script%7cNoticia+Text"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -33,20 +34,61 @@
             </ul>
         </div>
         <!--menu-->
-        <!--Demonstrates Conditionals and Loops-->
+        <!--Demonstrates Conditionals and Parameters-->
         <div class="guessing">
             <h3>Number Game</h3>
             <p>I am thinking of a number between 0-5.</p>
             <p> Enter your guess here: <input type="text" size="5px" name="guess" id="guess"></p>
-                <button onclick="numberFunction(document.getElementById('guess').value)" class="numberbtn">Check</button>
-                <p id="results"></p>
+            <button onclick="numberFunction(document.getElementById('guess').value)" class="numberbtn">Check</button>
+            <p id="results"></p>
         </div>
         <!--guessing-->
+        <!--Demonstrates Loops and Sorting-->
+        <div class="animals">
+            <h2>The Great Animal Sort</h2>
+            <div class="info">
+                <p id="noah"> Below is a list of the animals that showed up to get on the ark. <br>
+                    <span id="direction"> Click the button at the bottom to help Noah sort them. </span></p>
+                <p id="animalList">
+                    Elephant <br>
+                    Chicken <br>
+                    Snake <br>
+                    Cow <br>
+                    Duck<br>
+                    Lizard<br>
+                    Lion <br>
+                    Goose <br>
+                    Salamander <br>
+                    Dog <br>
+                    Eagle<br>
+                    Turtle
+                </p>
+                <button onclick="sortFunction()" class="animalbtn">Sort</button>
+            </div>
+            <!--info-->
+            <div class="mammals animalSort">
+                <h3>Mammals</h3>
+                <p id="mammal"></p>
+            </div>
+            <!--mammals-->
+            <div class="reptiles animalSort">
+                <h3>Reptiles</h3>
+                <p id="reptile"></p>
+            </div>
+            <!--reptiles-->
+            <div class="animalSort">
+                <h3>Fowl</h3>
+                <p id="fowl"></p>
+            </div>
+        </div>
+        <!--fowl-->
+        <!--animals-->
     </div>>
     <!--container-->
     <script src="scripts/currentDate.js"></script>
     <script src="scripts/dropdown.js"></script>
     <script src="scripts/guessinggame.js"></script>
+    <script src="scripts/animalSort.js"></script>
 </body>
 
 </html>
