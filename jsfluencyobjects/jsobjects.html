@@ -11,10 +11,51 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script%7cNoticia+Text"
         rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container">
-            <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">JavaScript Objects</a></h1>
+        <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">JavaScript Objects</a></h1>
+        <div class="objectSimple sections">
+            <h2>Simple JS Object Creation</h2>
+            <p>This JS Object will be created simply, with the values already assigned to their paired
+                name.</p>
+            <button onclick="simpleObject()" class="simplebtn">Create</button>
+            <p id="simple"></p>
+        </div>
+        <div class="simpleAdd sections">
+            <h2>Simple JS Object Add Property</h2>
+            <p>The previous JS Object will have another property added to it.</p>
+            <button onclick="simpleAdd()" class="simplebtn">Add</button>
+            <p id="simpleAdd"></p>
+        </div>
+        <div class="objectMethod sections">
+            <h2>JS Object Methods</h2>
+            <p>JS Objects can have methods defined, or added, as well.</p>
+            <button onclick="objectMethod()" class="simplebtn">Method</button>
+            <p id="methodAdd"></p>
+        </div>
+        <div class="createConstructor sections">
+            <h2>JS Object Constructor</h2>
+            <p>Constructors can be created and used as a pattern for creating many of the same type of objects.</p>
+            <button onclick="constructorCreate()" class="simplebtn">Constuctors</button>
+            <p id="constructors"></p>
+        </div>
+        <div class="constructorAdd sections">
+            <h2>JS Object Constructor Additions</h2>
+            <p>Methods and properties can easily be added to individual objects.</p>
+            <button onclick="constructorAdd()" class="simplebtn">Add Speech Name</button>
+            <p id="addSpeech"></p>
+            <p id="speechInfo"></p>
+        </div>
+        <div class="prototypeAdd sections">
+                <h2>JS Object Prototype Inheritence</h2>
+                <p>To add a property or Method to the original Constructor, use the prototype keyword.</p>
+                <button onclick="prototypeAdd()" class="simplebtn">JS Inheritence</button>
+                <p id="protoAdd"></p>
+            </div>
     </div>
+    <script src="scripts/simpleObject.js"></script>
 </body>
+
 </html>

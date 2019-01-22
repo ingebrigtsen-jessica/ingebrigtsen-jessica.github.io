@@ -10,7 +10,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 1.25rem;
-    ;
 }
 
 h1{
@@ -31,4 +30,70 @@ h1 a:link {
 
 h1 a:visited{
     color: #C5F5F0;
+}
+
+.sections {
+    border: 2px dashed #C5F5F0;
+    text-align: center;
+    padding: .5rem;
+}
+/*********Simple JS Object Creation********/
+
+.objectSimple {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 2rem;
+  
+}
+
+.sections h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #f1fdfb;
+}
+
+.sections p {
+    font-weight: bold;
+    color: #f5c5ca;
+    font-family: 'Noticia Text', serif;
+}
+
+.simplebtn {
+    background-color: #C5F5F0;
+    color: #4e6260;
+    font-weight: bold;
+    font-family: 'Noticia Text', serif;
+    font-size: 1rem;
+}
+
+/*********Simple JS Object Add Property********/
+.simpleAdd{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/*********Simple JS Object Add Method********/
+.objectMethod{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/*********Object Created via Constructor********/
+.createConstructor{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 2rem;
+}
+
+/*********Add property and Method to One Object********/
+.constructorAdd{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/*********Add Property and Method to Constructor created Object********/
+#speechInfo{
+    color: #f1fdfb;
+    font-style: italic;
+    font-size: .75rem;
 }
