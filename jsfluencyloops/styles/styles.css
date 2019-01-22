@@ -13,7 +13,7 @@ body {
     ;
 }
 
-h1 {
+h1{
     grid-column-start: 1;
     grid-column-end: 4;
     font-family: 'Dancing Script', cursive;
@@ -21,6 +21,18 @@ h1 {
     color: #C5F5F0;
     font-size: 3rem;
 }
+
+h1 a {
+    color: #C5F5F0;
+}
+h1 a:link {
+    text-decoration: none;
+}
+
+h1 a:visited{
+    color: #C5F5F0;
+}
+
 
 /************Arrays*******************/
 
