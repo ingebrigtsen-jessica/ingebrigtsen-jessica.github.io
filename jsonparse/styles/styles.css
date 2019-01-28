@@ -77,7 +77,7 @@ input {
     font-size: 1rem;
 }
 
-/****************Parse Example **************/
+/****************Parse Example ***************/
 .parse {
     grid-column-start: 2;
     grid-column-end: 3;
