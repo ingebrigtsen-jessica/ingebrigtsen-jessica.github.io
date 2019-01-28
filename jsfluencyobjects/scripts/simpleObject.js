@@ -1,7 +1,13 @@
 let student = {
     firstName: "Fred",
     lastName: "Flinstone",
-    gpa: 3.5
+    gpa: 3.5,
+    get fName() {
+        return this.firstName;
+    },
+    set fName(fName){
+        this.firstName = fName;
+    }
 };
 
 function Student(first, last, gpa) {
@@ -68,3 +74,9 @@ function prototypeAdd() {
 
     document.getElementById("protoAdd").innerHTML = "Honor's Speech: " + honors.speechInfo() + "<br>" + "Valedictorian's Speech: " + valedictorian.speechInfo();
 }
+
+
+
+student.fName;
+
+student.fName = Pepples;
