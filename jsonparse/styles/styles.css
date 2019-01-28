@@ -31,22 +31,36 @@ h1 a:visited{
     color: #C5F5F0;
 }
 
-/****************Stringify Example **************/
-.stringify {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    border-right: 2px dashed #C5F5F0;
-}
-
-.stringify h2 {
+h2 {
     font-family: 'Amatic SC', cursive;
     text-align: center;
     font-size: 2rem;
     color: #f5c5ca;
 }
 
-.stringify p {
+
+p {
     color: #f1fdfb;
+}
+
+
+button {
+    background-color: #f5c5ca;
+    border-radius: 2px;
+    font-size: 1rem;
+    padding: .25rem;
+    margin: 1rem;
+}
+
+input {
+    margin: .25rem;
+}
+
+/****************Stringify Example **************/
+.stringify {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
 }
 
 .stringify p:nth-child(3) {
@@ -58,19 +72,22 @@ h1 a:visited{
     font-size: .75rem;
 }
 
-.stringify button {
-    background-color: #f5c5ca;
-    border-radius: 2px;
-    font-size: 1rem;
-    padding: .25rem;
-    margin: 1rem;
-}
-
-.stringify input {
-    margin: .25rem;
-}
-
-#strung {
+#strung, #parsed {
     color: #f1fdfb;
     font-size: 1rem;
+}
+
+/****************Parse Example **************/
+.parse {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.parse p:nth-child(2) {
+    font-size: .9rem;
+}
+
+.parse p:nth-child(3) {
+    color: #f5c5ca;
+    font-size: 1.25rem;
 }

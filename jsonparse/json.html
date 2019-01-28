@@ -27,9 +27,22 @@
             <div id="strung"></div>
         </div>
         <!--stringify-->
+        <div class = "parse">
+            <h2> Parse</h2>
+            <p>If a string is written in JSON format, it can be parsed into an Object</p>
+            <p>Create a String of Favorites:</p>
+            <p>Color: <input type="text" name="fColor" id="fColor" size="10">
+                Number: <input type="text" name="fNumber" id="fNumber" size="6">
+                Dessert: <input type="text" name="fDessert" id="fDessert" size="15"><br></p>
+                <button class="parsing" onclick="createString(document.getElementById('fColor').value, document.getElementById('fNumber').value, document.getElementById('fDessert').value)">Parse</button>
+                <div id="parsed">
+                    
+</div>
+        </div><!--parse-->
     </div>
     <!--container-->
     <script src="scripts/createObject.js"></script>
+    <script src="scripts/createString.js"></script>
 </body>
 
 </html>
