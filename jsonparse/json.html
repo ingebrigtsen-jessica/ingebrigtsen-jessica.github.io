@@ -11,9 +11,25 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script%7cNoticia+Text"
         rel="stylesheet">
 </head>
+
 <body>
-    <div class = "container">
-<h1><a href="https://ingebrigtsen-jessica.github.io/index.html">JSON Parse & Stringify</a></h1>
-</div>
+    <div class="container">
+        <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">JSON Parse & Stringify</a></h1>
+
+        <div class="stringify">
+            <h2>Stringify</h2>
+            <p>To change an object into a string, use JSON's Stringify!</p>
+            <p> Create an Object:</p>
+            <p>First Name: <input type="text" name="fName" id="fName" size="10">
+            Last Name: <input type="text" name="lName" id="lName" size="10">
+            Major: <input type="text" name="major" id="major" size="15"><br></p>
+            <button class="string" onclick="createObject(document.getElementById('fName').value, document.getElementById('lName').value, document.getElementById('major').value)">Stringify</button>
+            <div id="strung"></div>
+        </div>
+        <!--stringify-->
+    </div>
+    <!--container-->
+    <script src="scripts/createObject.js"></script>
 </body>
+
 </html>

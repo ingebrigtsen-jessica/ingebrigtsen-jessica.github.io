@@ -1,19 +1,19 @@
 body {
     background-color: #4e6260;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Noticia Text', serif;
 }
 
 /***************Grid Container************/
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(2, 2fr);
     grid-gap: 1.25rem;
 }
 
 h1{
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     font-family: 'Dancing Script', cursive;
     text-align: center;
     color: #C5F5F0;
@@ -29,4 +29,48 @@ h1 a:link {
 
 h1 a:visited{
     color: #C5F5F0;
+}
+
+/****************Stringify Example **************/
+.stringify {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+}
+
+.stringify h2 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 2rem;
+    color: #f5c5ca;
+}
+
+.stringify p {
+    color: #f1fdfb;
+}
+
+.stringify p:nth-child(3) {
+    color: #f5c5ca;
+    font-size: 1.25rem;
+}
+
+.stringify p:nth-child(4) {
+    font-size: .75rem;
+}
+
+.stringify button {
+    background-color: #f5c5ca;
+    border-radius: 2px;
+    font-size: 1rem;
+    padding: .25rem;
+    margin: 1rem;
+}
+
+.stringify input {
+    margin: .25rem;
+}
+
+#strung {
+    color: #f1fdfb;
+    font-size: 1rem;
 }
