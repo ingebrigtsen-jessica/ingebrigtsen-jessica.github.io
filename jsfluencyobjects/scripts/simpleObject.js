@@ -74,9 +74,3 @@ function prototypeAdd() {
 
     document.getElementById("protoAdd").innerHTML = "Honor's Speech: " + honors.speechInfo() + "<br>" + "Valedictorian's Speech: " + valedictorian.speechInfo();
 }
-
-
-
-student.fName;
-
-student.fName = Pepples;
