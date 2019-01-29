@@ -1,6 +1,6 @@
 body {
     background-color: #4e6260;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Noticia Text', serif;
 }
 
 
@@ -32,10 +32,54 @@ h1 a:visited{
     color: #C5F5F0;
 }
 
+h2 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f5c5ca;
+    margin-bottom: .2rem;
+}
+
+h3 {
+    color: #C5F5F0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-align:center;
+    margin-top: 0;
+}
+
+p {
+    color: #f1fdfb;
+    margin: 1.5rem;
+}
+
 /*********************Town Selection***************/
 .townSelect {
     grid-column-start: 1;
     grid-column-end: 2;
     border-right: 2px dashed #C5F5F0;
 
+}
+
+#selection {
+    margin: 1.25rem;
+}
+
+/*********************Town Display***************/
+.townDisplay {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.label {
+    color: #f5c5ca;
+    font-weight: bold;
+}
+
+.townInfo {
+    margin-top: 0;
+}
+
+#townName{
+    height: 2rem;
 }

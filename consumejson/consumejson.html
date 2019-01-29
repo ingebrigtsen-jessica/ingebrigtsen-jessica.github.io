@@ -17,18 +17,30 @@
         <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">Consume JSON via XMLHTTP request</a></h1>
         <div class="townSelect">
             <h2>Town Selection</h2>
-            <p>Johnny lives in Salem, Oregon. He is thinking about visiting the Mountains (Sisters) or perhaps the
-                Coast (Seaside)</p></br>
-            <p>He's decided he wants to go where it is warmest, even if that means staying put.</p>
-            <p>Let's check the weather: </p>
-            <select name="towns" onchange="checkWeather(this.value)">
+            <p>Johnny is taking a trip to Oregon, and wants to visit Seaside, Salem, and Sisters.</p>
+            <p>He'd like to start at the warmest place first - so let's check the weather!</p>
+            <select id="selection" name="towns" onchange="checkWeather(this.value)">
+                <option selected disabled>Select Town</option>
                 <option value="salem">Salem</option>
                 <option value="sisters">Sisters</option>
                 <option value="seaside">Seaside</option>
             </select><br>
         </div>
         <div class="townDisplay">
-
+            <h2> Weather Information</h2>
+            <div class="townInfo">
+                <h3 id="townName"></h3>
+                <p><span class="label">Temperature:</span>
+                    <span class="value" id="currenttemp"></span> &deg;F</p>
+                <p><span class="label">Description: </span>
+                    <span id="currently" class="value"></span></p>
+                <p> <span class="label">Wind Speed: </span>
+                    <span id="mph" class="value"></span> mph</p>
+                <p><span class="label">Wind Chill: </span>
+                    <span id="windchill" class="value"></span>&deg;F</p>
+                <p><span class="label">Humidity: </span>
+                    <span id="humidity" class="value"></span>&#37;</p>
+            </div>
         </div>
 
     </div>
