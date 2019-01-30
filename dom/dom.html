@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+    maximum-scale=1">
+    <title>DOM Manipulation</title>
+    <meta name="DOM Manipulation" content="Manipulating the DOM via JS">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script%7cNoticia+Text"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">DOM Manipulation</a></h1>
+        <div class="sections section1">
+            <h2>getElementByID & innerHTML</h2>
+            <p>The most common way to access the HTML DOM is to locate an element by the ID name. Once it is
+                located you can change things about it.</p>
+            <p>In this example clicking on the button will locate the empty element below and add the word Apple</p>
+            <button onclick="changeHTML()" class="innerHTML">innerHTML</button>
+            <p class="empty" id="example1"></p>
+        </div>
+        <!--section1-->
+        <div class="sections section2">
+            <h2>Tag Name & innerHTML</h2>
+            <p>You can also access an HTML element by the tag name, though it's a bit trickier. Check out my JS code to
+                see what I am doing.</p>
+            <p>Click the button below to change these instructions</p>
+            <button onclick="changetag()" class="innertag">Single Tag</button>
+            <p>Click the button below to change ALL paragraph tags</p>
+            <button onclick="changetags()" class="innertags">All Tags</button>
+
+        </div>
+        <!--section2-->
+        <div id="combined" class="sections section3">
+            <h2>When Their Powers Combine</h2>
+            <p>You can use getElementById() with getElementsByTagName</p>
+            <p>Click the button below to change only the p elements in this div</p>
+            <button onclick="combinedQueries()">Combine</button>
+            <p>You can also check how many of a certain tag there is within a given id</p>
+            <p>Click below to see how many p elements there are in this section</p>
+            <button onclick="countingPs()">Count Them Up</button>
+            <p id="answer"></p>
+
+        </div>
+        <!--section3-->
+        <div class="sections section4">
+            <h2>Creating and Appending</h2>
+            <p>JS can also create HTML elements and add them to the page</p>
+            <p>Things to do today:</p>
+            <ul id="todo">
+                <li>Homework</li>
+                <li>Run Errands</li>
+                <li>Take Ashley to Dance</li>
+            </ul>
+            <p>Click the button below to create an element and add it to the list</p>
+            <button onclick="create()">Add Item</button>
+        </div>
+        <!--section4-->
+        <div class="sections section5">
+            <h2>Inserting new Elements</h2>
+            <p>Perhaps I need my new item higher up on the list, so I make sure to get to it</p>
+            <p>Things to do today:</p>
+            <ul id="todo2">
+                <li>Homework</li>
+                <li>Run Errands</li>
+                <li>Take Ashley to Dance</li>
+            </ul>
+            <p>Click the button below to create an element and insert it to the list</p>
+            <button onclick="insert()">Insert Item</button>
+        </div>
+        <!--section5-->
+        <div class="sections section6">
+            <h2>Removing Elements</h2>
+            <p>When I finish something, I need to remove it from the list</p>
+            <p>Things to do today:</p>
+            <ul id="todo3">
+                <li>Homework</li>
+                <li>Laundry</li>
+                <li>Run Errands</li>
+                <li>Take Ashley to Dance</li>
+            </ul>
+            <p>Which item would you like to remove?  <input type="text" name="remove" id="remove" size="5"></p>
+            <p>Click the button below to remove the requested item from the list</p>
+            <button onclick="remove(document.getElementById('remove').value)">Remove Item</button>
+        </div>
+        <!--section6-->
+    </div>
+    <!--container-->
+    <script src="scripts/innerHTML.js"></script>
+    <script src="scripts/changetags.js"></script>
+    <script src="scripts/createappend.js"></script>
+
+</body>
+
+</html>
