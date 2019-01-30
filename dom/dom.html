@@ -83,6 +83,11 @@
                 <li>Run Errands</li>
                 <li>Take Ashley to Dance</li>
             </ul>
+            <p>If I am working from the top -> down, I can remove the items by pushing this button:</p>
+            <button onclick="checkoff(1)">Remove Top Item</button>
+            <p>Or how about the bottom -> up?</p>
+            <button onclick="checkoff(2)">Remove Bottom Item</button>
+            <p>If instead I want to choose which item to cross off try this:</p>
             <p>Which item would you like to remove?  <input type="text" name="remove" id="remove" size="5"></p>
             <p>Click the button below to remove the requested item from the list</p>
             <button onclick="remove(document.getElementById('remove').value)">Remove Item</button>
@@ -93,6 +98,7 @@
     <script src="scripts/innerHTML.js"></script>
     <script src="scripts/changetags.js"></script>
     <script src="scripts/createappend.js"></script>
+    <script src="scripts/deletingelements.js"></script>
 
 </body>
 

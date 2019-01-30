@@ -22,11 +22,3 @@ function insert() {
     
 }
 
-function remove(number){
-    //first get the list
-    let todo = document.getElementById("todo3").children;
-    //next remove the given item (-1 to account for indexes)
-    let x = number-1;
-    let done = todo[x];
-    done.remove();
-}
