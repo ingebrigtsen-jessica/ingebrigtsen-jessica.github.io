@@ -38,6 +38,13 @@ h2 {
     color: #f5c5ca;
     margin-bottom: .2rem;
 }
+
+h3 {
+    font-family: 'Amatic SC', cursive;
+    color: #f5c5ca;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
 .sections{
     border-right: 2px dashed #C5F5F0;
     margin: .5rem;
@@ -71,14 +78,40 @@ h2 {
   
 }
 
-/***********************Change by Tag Names*******************/
+/***********************Change by Tag/Class Names*******************/
 
 .section2{
     grid-column-start: 2;
     grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
 }
 .section2 p:not(:nth-child(2)) {
     color: #f1fdfb;
+}
+
+.section2 h2, .section2 p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.section2 .tagnames {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.section2 .classnames {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.wholediv {
+    margin-top: .5rem;
+    color: #f5c5ca;
+}
+
+#classbtn {
+    color: black;
 }
 
 /***********************Combine ID names and Tags*******************/
@@ -91,9 +124,6 @@ h2 {
     color: #f1fdfb;
 }
 
-#answer{
-    font-size: 1.25rem;
-}
 
 /***********************Creating and Appending *******************/
 

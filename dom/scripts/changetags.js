@@ -11,15 +11,42 @@ function changetags() {
     let nodeList = document.getElementsByTagName("P");
     //We now need to loop through the node list to access each <p> element individually to change the innerHTML
     let i = 0;
-    for (i; i<nodeList.length; i++){
+    for (i; i < nodeList.length; i++) {
         nodeList[i].innerHTML = "You'll need to refresh again!"
     }
+}
+
+function changeclass() {
+    document.getElementsByClassName("classchange")[1].innerHTML = "This changes just this part of the class";
+}
+
+function changeAllClasses() {
+    let list = document.getElementsByClassName("classchange");
+    let i = 0;
+    for (i; i < list.length; i++) {
+        list[i].innerHTML = "The Downside is that all elements have to have the class name added";
+    }
+}
+
+function classdivs() {
+    let list = document.getElementsByClassName("wholediv");
+    let i = 0;
+    for (i; i < list.length; i++) {
+        list[i].innerHTML = "It will replace all exisitng content, making the child class names a moot point.";
+
+    }
+}
+
+function countclass() {
+    let classList = document.getElementsByClassName("wholediv").getElementsByTagName("P");
+    document.getElementById("answer2").innerHTML = classList.length;
+
 }
 
 function combinedQueries() {
     let nodeList = document.getElementById("combined").getElementsByTagName("P");
     let i = 0;
-    for (i; i<nodeList.length; i++){
+    for (i; i < nodeList.length; i++) {
         nodeList[i].innerHTML = "Only we changed this time"
     }
 
