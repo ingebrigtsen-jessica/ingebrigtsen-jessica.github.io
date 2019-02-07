@@ -5,17 +5,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, 
     maximum-scale=1">
-    <title>Consume JSON</title>
-    <meta name="consumeJSON" content="Consume JSON with XMLHTTP">
+    <title>Local Storage</title>
+    <meta name="localStorage" content="Showing local storage in javascript">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script%7cNoticia+Text"
+    <link
+        href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script%7cNoticia+Text"
         rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <h1>Local Storage API</h1>
-        
+        <div class="simple">
+            <h2>Storing & Retrieving Simple Data</h2>
+            <p>Enter your first name: <input name="firstName" id="firstName" size="12"></p>
+            <button onclick="newName(document.getElementById('firstName').value)">Change Name</button><br>
+            <p>Hi! My name is: <span id="name"></span></p><br>
+
+            <p>Remove the local storage that is holding the user name:</p>
+            <button onclick="clearName()">Clear Local Storage</button>
+        </div>
+        <div class="arrays">
+            <h2>Storing & Retrieving Arrays</h2>
+            <div class="enterList">
+                <p>Your grocery list already includes:<span id="oglist"><br>Cereal<br>Ice Cream<br>Apples</span></p>
+                <p>Add 1 more item to your list:</p>
+                <p id="warning"></p>
+                <input name="grocery" id="grocery" size="15">
+                <button onclick="addItem(document.getElementById('grocery').value)">Add Item</button><br>
+                <p>Remove the local storage that is holding the grocery list:</p>
+                <button onclick="clearList()">Clear Local Storage</button>
+            </div>
+            <div class="displayList">
+                <h3>Grocery List</h3>
+                <p id="groceryList"></p>
+            </div>
+        </div>
     </div>
 
+    <script src="scripts/simpledata.js"></script>
+    <script src="scripts/grocerylist.js"></script>
 </body>
+
 </html>

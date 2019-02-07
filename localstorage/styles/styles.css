@@ -37,3 +37,92 @@ h2 {
     font-size: 2rem;
     color: #f5c5ca;
 }
+
+button {
+    margin-bottom: 1rem;
+}
+
+/******************Name Storing*******************/
+
+.simple {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 2px dashed #C5F5F0;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.simple p{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
+
+.simple p:nth-child(5){
+    color: #f5c5ca;
+}
+
+#name {
+    color: #f1fdfb;
+}
+
+/************************Arrays****************/
+.arrays {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 2px dashed #C5F5F0;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.arrays h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.arrays p:not(#warning){
+    font-size: 1.2rem;
+    margin: .5rem;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
+
+.arrays .enterList {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+}
+
+.arrays .displayList {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.arrays #warning {
+    color: #f5c5ca;
+    font-size: 1rem;
+}
+
+.arrays h3 {
+    color: #f5c5ca;
+    font-family: 'Noticia Text', serif;
+    margin-top: 0;
+}
+
+.arrays #oglist {
+    color: #f5c5ca;
+}
+
+.arrays ul {
+    list-style: none;
+    font-family: 'Noticia Text', serif;
+}
+.arrays li {
+    color: #f1fdfb;
+}
