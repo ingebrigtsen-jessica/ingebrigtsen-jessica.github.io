@@ -126,3 +126,26 @@ button {
 .arrays li {
     color: #f1fdfb;
 }
+
+/**************Associative Arrays*****************/
+.associative {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 2px dashed #C5F5F0;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+/**************Objects*****************/
+.objects {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 2px dashed #C5F5F0;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
