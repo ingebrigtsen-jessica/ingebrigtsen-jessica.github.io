@@ -22,12 +22,11 @@ function addItem(item) {
     else {
         listArray.push(item);
         localStorage.setItem("groceries", JSON.stringify(listArray));
-        let display = JSON.parse(localStorage.getItem("groceries"));
-        document.getElementById("groceryList").innerHTML = display.join("");
+        document.getElementById("groceryList").innerHTML = listArray.join("");
 
     }
 }
-//clear out the firstName key and refresh the page
+//clear out the groceryList key and refresh the page
 function clearList() {
     localStorage.removeItem("groceries");
     location.reload();

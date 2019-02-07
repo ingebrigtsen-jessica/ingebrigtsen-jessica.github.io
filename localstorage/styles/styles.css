@@ -11,7 +11,7 @@ body {
     grid-gap: 1.25rem;
 }
 
-h1{
+h1 {
     grid-column-start: 1;
     grid-column-end: 3;
     font-family: 'Dancing Script', cursive;
@@ -23,11 +23,12 @@ h1{
 h1 a {
     color: #C5F5F0;
 }
+
 h1 a:link {
     text-decoration: none;
 }
 
-h1 a:visited{
+h1 a:visited {
     color: #C5F5F0;
 }
 
@@ -54,14 +55,14 @@ button {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.simple p{
+.simple p {
     font-size: 1.2rem;
     margin: 0;
     color: #C5F5F0;
     font-family: 'Noticia Text', serif;
 }
 
-.simple p:nth-child(5){
+.simple p:nth-child(5) {
     color: #f5c5ca;
 }
 
@@ -70,6 +71,7 @@ button {
 }
 
 /************************Arrays****************/
+
 .arrays {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -79,14 +81,15 @@ button {
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .arrays h2 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-.arrays p:not(#warning){
+
+.arrays p:not(#warning) {
     font-size: 1.2rem;
     margin: .5rem;
     color: #C5F5F0;
@@ -123,11 +126,13 @@ button {
     list-style: none;
     font-family: 'Noticia Text', serif;
 }
+
 .arrays li {
     color: #f1fdfb;
 }
 
 /**************Associative Arrays*****************/
+
 .associative {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -136,10 +141,41 @@ button {
     border: 2px dashed #C5F5F0;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
+.associative h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.associative .info {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+}
+
+.associative .assocarray {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.assocarray h3 {
+    color: #f5c5ca;
+    font-family: 'Noticia Text', serif;
+    margin-top: 0;
+}
+
+.associative p {
+    font-size: 1.2rem;
+    margin: .5rem;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
 
 /**************Objects*****************/
+
 .objects {
     grid-column-start: 2;
     grid-column-end: 3;

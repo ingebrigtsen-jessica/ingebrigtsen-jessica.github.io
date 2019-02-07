@@ -43,16 +43,29 @@
         </div>
         <div class="associative">
             <h2> Storing & Retrieving Associative Arrays</h2>
+            <div class="info">
+                <p>Push the button below to display a list of employees and their titles:</p>
+                <button onclick="displayTitles()">Display</button>
+                <p> Remove the local storage that is holding the employee list:</p>
+                <button onclick="clearEmployees()">Clear Local Storage</button>
+            </div>
+            <div class="assocarray">
+                <h3>Employee List</h3>
+                <p id="employeeList"></p>
+            </div>
+
+
             <!--make array of people with titles as keys push button to display, keep there until local storage is cleared-->
         </div>
         <div class="objects">
-                <h2> Storing & Retrieving Objects</h2>
-                <!--Student Object (from JS object fluency) same display method as above, but with person 1 display and person 2 display-->
-            </div>
+            <h2> Storing & Retrieving Objects</h2>
+            <!--Student Object (from JS object fluency) same display method as above, but with person 1 display and person 2 display-->
+        </div>
     </div>
 
     <script src="scripts/simpledata.js"></script>
     <script src="scripts/grocerylist.js"></script>
+    <script src="scripts/employeelist.js"></script>
 </body>
 
 </html>
