@@ -184,4 +184,79 @@ button {
     border: 2px dashed #C5F5F0;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
 }
+.objects h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.objects h3 {
+    color: #f5c5ca;
+    font-family: 'Noticia Text', serif;
+    margin-top: 0;
+}
+
+.objects p {
+    font-size: 1.2rem;
+    margin: .5rem;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.objects .fred {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.objects .barney {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fred .headings, .barney .headings {
+    grid-column-start: 1;
+    grid-column-end:2;
+    margin-top:0;
+    padding: 0;
+    border-right: 2px dashed #C5F5F0;
+}
+
+.objects #showfred {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.fred div, .barney div {
+    color:#f5c5ca;
+}
+
+.objects .objbtn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    margin:auto;
+}
+ul {
+    list-style: none;
+    margin:0;
+}
+
+li {
+    font-family: 'Noticia Text', serif;
+    color: #f1fdfb;
+    padding: .1rem;
+}
+
+

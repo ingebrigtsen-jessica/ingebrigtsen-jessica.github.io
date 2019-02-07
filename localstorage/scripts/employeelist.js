@@ -5,7 +5,6 @@ if (!localStorage.getItem("employees"))
 //otherwise display the list
 else {
     let display = JSON.parse(localStorage.getItem("employees"));
-    console.log(display);
     for (let i in display){
         document.getElementById("employeeList").innerHTML += i + " : " + display[i] + "<br>";
         }

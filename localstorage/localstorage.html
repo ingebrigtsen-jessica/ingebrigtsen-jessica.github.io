@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        <h1>Local Storage API</h1>
+        <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">Local Storage API</a></h1>
         <div class="simple">
             <h2>Storing & Retrieving Simple Data</h2>
             <p>Enter your first name: <input name="firstName" id="firstName" size="12"></p>
@@ -53,19 +53,53 @@
                 <h3>Employee List</h3>
                 <p id="employeeList"></p>
             </div>
-
-
-            <!--make array of people with titles as keys push button to display, keep there until local storage is cleared-->
         </div>
         <div class="objects">
             <h2> Storing & Retrieving Objects</h2>
             <!--Student Object (from JS object fluency) same display method as above, but with person 1 display and person 2 display-->
+            <div class="fred">
+                <p> Click to reveal information about Fred: <button onclick="revealFred()">Fred</button>
+                </p>
+
+                <div class="headings">
+                    <ul>
+                        <li>First Name:</li>
+                        <li>Last Name:</li>
+                        <li>Wife:</li>
+                        <li>Child:</li>
+                    </ul>
+                </div>
+                <div id="showfred">
+
+                </div>
+            </div>
+            <div class="barney">
+                <p> Click to reveal information about Barney: <button onclick="revealBarney()">Barney</button></p>
+
+                <div class="headings">
+                    <ul>
+                        <li>First Name:</li>
+                        <li>Last Name:</li>
+                        <li>Wife:</li>
+                        <li>Child:</li>
+                    </ul>
+                </div>
+                <div id="showbarney">
+                </div>
+               
+            </div>
+            <div class="objbtn">
+            <button onclick="clearFred()" id="fredbtn">Clear Fred</button>
+            <button onclick="clearBarney()" id="brnybtn">Clear Barney</button>
+            <button onclick="clearPeople()" id="bothbtn">Clear Both</button>
+            </div>
         </div>
     </div>
 
     <script src="scripts/simpledata.js"></script>
     <script src="scripts/grocerylist.js"></script>
     <script src="scripts/employeelist.js"></script>
+    <script src="scripts/objectstore.js"></script>
 </body>
 
 </html>
