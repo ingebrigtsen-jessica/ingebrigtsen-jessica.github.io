@@ -1,0 +1,135 @@
+body {
+    background-color: #4e6260;
+    font-family: 'Noticia Text', serif;
+}
+
+/***************Grid Container************/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.25rem;
+}
+
+h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #C5F5F0;
+    font-size: 3rem;
+}
+
+h1 a {
+    color: #C5F5F0;
+}
+
+h1 a:link {
+    text-decoration: none;
+}
+
+h1 a:visited {
+    color: #C5F5F0;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 2rem;
+    color: #f5c5ca;
+}
+
+button {
+    margin: 1rem;
+}
+
+
+/******************Video1*******************/
+
+.video1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.video1 p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
+
+/******************Video2*******************/
+
+.video2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.video2 p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
+
+/******************Audio1*******************/
+
+.audio1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    border-top: 2px dashed #C5F5F0;
+    border-right: 2px dashed #C5F5F0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.audio1 p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
+
+/******************Audio2*******************/
+
+.audio2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    border-top: 2px dashed #C5F5F0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.audio2 p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
+#defaultbar{
+    width: 400px;
+    position: relative;
+    background-color:#C5F5F0;
+    height: 10px;
+    margin: auto;
+}
+
+#progressbar {
+    position: absolute;
+    height: 10px;
+    background-color: #f5c5ca;
+    width: 0px;
+}

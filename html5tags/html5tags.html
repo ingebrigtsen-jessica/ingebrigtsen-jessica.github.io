@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+    maximum-scale=1">
+    <title>Local Storage</title>
+    <meta name="localStorage" content="Showing local storage in javascript">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script%7cNoticia+Text"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>HTML5 Tags</h1>
+        <div class="video1">
+            <h2>Video with default controls</h2>
+            <video id="spirit" width="400">
+                <source src="videos/spiritual-dynamite.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video2">
+            <h2>Video without default controls</h2>
+            <video id="spirit2" width="400">
+                <source src="videos/spiritual-dynamite.mp4" type="video/mp4">
+            </video><br>
+            <button onclick="playorpause()">&#9655; / &#2405;</button>
+            <button onclick="changeposition(-10)"> &#10226; </button>
+            <button onclick="changeposition(10)">&#10227; </button>
+            <button onclick="fullscreen()">&#10529;</button>
+            <input type="range" id="volume" min="0" max="100" step="1" value="50" oninput="changeVolume(this.value)"
+                onchange="changeVolumne(this.value)">&#x1f50a;
+        </div>
+        <div class="audio1">
+            <h2>Audio with default controls</h2>
+            <audio controls>
+                <source src="audio/rejoice.mp3" type="audio/mpeg">
+            </audio><br>
+        </div>
+        <div class="audio2">
+            <h2>Audio without default controls</h2>
+            <div id="defaultbar">
+                <div id="progressbar"></div>
+            </div>
+            <audio id="rejoice" src="audio/rejoice.mp3" ontimeupdate="update()">
+            </audio>
+            <button onclick="playorpauseaudio()">&#9655; / &#2405;</button>
+            <button onclick="changeaudioposition(-10)"> &#10226; </button>
+            <button onclick="changeaudioposition(10)">&#10227; </button>
+        </div>
+    </div>
+    <script src="scripts/playandpause.js"></script>
+    <script src="scripts/forwardandbackward.js"></script>
+    <script src="scripts/volume.js"></script>
+    <script src="scripts/fullscreen.js"></script>
+</body>
+
+</html>
