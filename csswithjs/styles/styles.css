@@ -49,3 +49,16 @@ p {
     color: #C5F5F0;
     font-family: 'Noticia Text', serif;
 }
+
+/*********************Text Styles***************/
+.text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+   text-align: center;
+}
+
+.text p {
+    color: black;
+    font: 14px sans-serif;
+}
