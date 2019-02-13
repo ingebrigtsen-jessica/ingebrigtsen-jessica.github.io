@@ -1,5 +1,5 @@
 function changeposition(amount) {
-    let video = document.getElementById("spirit");
+    let video = document.getElementById("spirit2");
 
     video.currentTime += amount;
 }
