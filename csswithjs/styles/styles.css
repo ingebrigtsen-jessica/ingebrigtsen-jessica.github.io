@@ -1,0 +1,51 @@
+body {
+    background-color: #4e6260;
+    font-family: 'Noticia Text', serif;
+}
+
+/***************Grid Container************/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.25rem;
+}
+
+h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #C5F5F0;
+    font-size: 3rem;
+}
+
+h1 a {
+    color: #C5F5F0;
+}
+
+h1 a:link {
+    text-decoration: none;
+}
+
+h1 a:visited {
+    color: #C5F5F0;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 2rem;
+    color: #f5c5ca;
+}
+
+button {
+    margin: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
