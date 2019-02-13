@@ -1,7 +1,7 @@
 function colorLinear() {
     let canvas = document.getElementById("colorhere");
     let ctx = canvas.getContext("2d");
-
+    ctx.clearRect(0,0,canvas.width, canvas.height);
     //(x start, y start, x end, y end)
     let gradient = (ctx.createLinearGradient(0,0,170,0))
 
@@ -20,7 +20,7 @@ function colorRadial() {
 
     let canvas = document.getElementById("colorhere");
     let ctx = canvas.getContext("2d");
-
+    ctx.clearRect(0,0,canvas.width, canvas.height);
     //(x start, y start, radius start, x end, y end, radius end)
     let gradient = (ctx.createRadialGradient(75,50,5,90,60,100))
 

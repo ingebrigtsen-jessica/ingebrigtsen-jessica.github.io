@@ -6,7 +6,7 @@ function drawRectangle() {
     if (canvas.getContext) {
         //getContext returns an object that provides methods and properties for drawing
         let ctx = canvas.getContext('2d');
-
+        ctx.clearRect(0,0,canvas.width, canvas.height);
         //Draw Rectangle - filled in
         //(x,y,width,height)
         ctx.fillRect(50, 5, 100, 100);
@@ -24,7 +24,7 @@ function drawCircle() {
     if (canvas.getContext) {
         //getContext returns an object that provides methods and properties for drawing
         let ctx = canvas.getContext('2d');
-
+        ctx.clearRect(0,0,canvas.width, canvas.height);
         //Draw Circle - stroke only
         //begin path lets the canvas know you are about to draw a path
         ctx.beginPath();
@@ -45,7 +45,7 @@ function drawTriangle() {
     if (canvas.getContext) {
         //getContext returns an object that provides methods and properties for drawing
         let ctx = canvas.getContext('2d');
-
+        ctx.clearRect(0,0,canvas.width, canvas.height);
         //Draw Triangle
         //begin path lets the canvas know you are about to draw a path
         ctx.beginPath();
