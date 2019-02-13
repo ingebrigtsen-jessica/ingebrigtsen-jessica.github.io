@@ -50,6 +50,8 @@
             <button onclick="playorpauseaudio()">&#9655; / &#2405;</button>
             <button onclick="changeaudioposition(-10)"> &#10226; </button>
             <button onclick="changeaudioposition(10)">&#10227; </button>
+            <input type="range" id="volume1" min="0" max="100" step="1" value="50" oninput="changeVolume(this.value)"
+                onchange="changeVolumne(this.value)">&#x1f50a;
         </div>
         <div class="canvasShapes">
             <h2>Draw Shapes with Canvas</h2>
