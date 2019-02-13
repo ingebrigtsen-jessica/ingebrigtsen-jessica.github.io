@@ -133,3 +133,28 @@ button {
     background-color: #f5c5ca;
     width: 0px;
 }
+
+/******************Canvas Shapes*******************/
+
+.canvasShapes {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    border-top: 2px dashed #C5F5F0;
+    border-right: 2px dashed #C5F5F0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.canvasShapes p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
+
+canvas {
+    margin-left: 2rem;
+
+}
