@@ -156,5 +156,23 @@ button {
 
 canvas {
     margin-left: 2rem;
-
 }
+/******************Canvas Colors*******************/
+
+.canvasColors {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    border-top: 2px dashed #C5F5F0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.canvasColors p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
+
