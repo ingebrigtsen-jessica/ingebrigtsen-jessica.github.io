@@ -43,6 +43,12 @@ button {
     margin: 1rem;
 }
 
+p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
 
 /******************Video1*******************/
 
@@ -56,12 +62,6 @@ button {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.video1 p {
-    font-size: 1.2rem;
-    margin: 0;
-    color: #C5F5F0;
-    font-family: 'Noticia Text', serif;
-}
 
 /******************Video2*******************/
 
@@ -72,13 +72,6 @@ button {
     margin-bottom: 0;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
-}
-
-.video2 p {
-    font-size: 1.2rem;
-    margin: 0;
-    color: #C5F5F0;
-    font-family: 'Noticia Text', serif;
 }
 
 /******************Audio1*******************/
@@ -94,12 +87,6 @@ button {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.audio1 p {
-    font-size: 1.2rem;
-    margin: 0;
-    color: #C5F5F0;
-    font-family: 'Noticia Text', serif;
-}
 
 /******************Audio2*******************/
 
@@ -113,12 +100,6 @@ button {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.audio2 p {
-    font-size: 1.2rem;
-    margin: 0;
-    color: #C5F5F0;
-    font-family: 'Noticia Text', serif;
-}
 #defaultbar{
     width: 400px;
     position: relative;
@@ -147,12 +128,6 @@ button {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.canvasShapes p {
-    font-size: 1.2rem;
-    margin: 0;
-    color: #C5F5F0;
-    font-family: 'Noticia Text', serif;
-}
 
 canvas {
     margin-left: 2rem;
@@ -169,10 +144,22 @@ canvas {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.canvasColors p {
-    font-size: 1.2rem;
-    margin: 0;
-    color: #C5F5F0;
-    font-family: 'Noticia Text', serif;
+
+/******************Canvas Colors*******************/
+
+.canvasText {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    border-top: 2px dashed #C5F5F0;
+    border-right: 2px dashed #C5F5F0;
+    font-family: 'Shadows Into Light', cursive;
 }
+
+.canvasText canvas {
+    margin: auto;
+}
+
 
