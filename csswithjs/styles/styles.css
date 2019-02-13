@@ -64,3 +64,10 @@ p {
     text-align: right;
 }
 
+/*********************Text Styles***************/
+.elements {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+

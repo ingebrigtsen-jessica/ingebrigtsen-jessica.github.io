@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">Manipulating CSS with JS</a></h1>
-<div class="text" id="test">
+<div class="text">
     <h2>Changing Text Styles</h2>
     <p id="invite">You are cordially invited to the wedding of:</p>
     <p id="bridegroom">Harry Potter & Ginny Weasley</p>
@@ -27,9 +27,20 @@
     <button onclick="changeSize()">Size</button>
     <button onclick="changeAlign()">Align</button>
 </div>
+<div class="elements">
+        <h2>Changing Elements</h2>
+        <p>Sometimes we may <span>need to change</span></p>
+        <p>attributes of an <span>element.</span></p>
+        <p>This <span>can be done by</span> by using a <span>loop!</span></p>
+        <p>Or you can access a specific element with <span>array selectors</span></p>
+        <button onclick="changeBackground()">Color</button>
+        <button onclick="changeSpanFont()">Font</button>
+        <button onclick="changeWithSelectors()">Single</button>
+    </div>
 
     </div><!--container-->
 <script src="scripts/changeText.js"></script>
+<script src="scripts/changeElements.js"></script>
 </body>
 
 </html>
