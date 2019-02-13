@@ -20,3 +20,10 @@ function changeSize() {
     document.getElementById("bridegroom").style.fontSize = "2rem";
     document.getElementById("location2").style.fontSize = "2rem";
 }
+
+function changeAlign() {
+    document.getElementById("invite").style.textAlign = "center";
+    document.getElementById("location1").style.textAlign = "center";
+    document.getElementById("bridegroom").style.textAlign = "center";
+    document.getElementById("location2").style.textAlign = "center";
+}
