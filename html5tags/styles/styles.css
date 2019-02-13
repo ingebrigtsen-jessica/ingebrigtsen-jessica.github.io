@@ -162,4 +162,16 @@ canvas {
     margin: auto;
 }
 
+/******************Canvas Pattern*******************/
+
+.canvasPattern {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    border-top: 2px dashed #C5F5F0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
 

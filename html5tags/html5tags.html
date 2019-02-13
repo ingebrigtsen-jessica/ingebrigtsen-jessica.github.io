@@ -74,6 +74,16 @@
             <button onclick="textFill()">Fill</button>
             <button onclick="textStroke()">Stroke</button>
         </div>
+        <div class="canvasPattern">
+                <h2>Patterns with Canvas</h2>
+                <div id="test"></div>
+                <canvas id="patternhere" width="600px"></canvas><br>
+                <button onclick="clearPattern()">Clear</button>
+                <button onclick="repeatPattern('repeat')">Repeat</button>
+                <button onclick="repeatPattern('repeat-x')">Horizontal</button>
+                <button onclick="repeatPattern('repeat-y')">Vertical</button>
+                <button onclick="repeatPattern('no-repeat')">No Repeat</button>
+            </div>
     </div>
     <script src="scripts/playandpause.js"></script>
     <script src="scripts/forwardandbackward.js"></script>
@@ -82,6 +92,7 @@
     <script src="scripts/shapes.js"></script>
     <script src="scripts/gradients.js"></script>
     <script src="scripts/text.js"></script>
+    <script src="scripts/patterns.js"></script>
 </body>
 
 </html>
