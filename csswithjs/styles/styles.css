@@ -84,3 +84,43 @@ p {
     width:25%;
 }
 
+/*********************Class Styles***************/
+.originalClass {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-top: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.originalClass h3 {
+    font-family: 'Shadows Into Light', cursive;
+    color: #f1fdfb;
+    font-size: 1.7rem;
+}
+
+.originalClass p {
+    color: #f5c5ca;
+}
+
+/*********************Class Styles***************/
+.newClass {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-top: 2px dashed #f5c5ca;
+    text-align: center;
+}
+
+.newClass h3 {
+    font-family: 'Noticia Text', serif;
+    color: #C5F5F0;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.newClass p {
+    color: #f1fdfb;
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+}
+
+
