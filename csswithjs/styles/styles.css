@@ -61,13 +61,26 @@ p {
 .text p {
     color: black;
     font: 14px sans-serif;
-    text-align: right;
+    text-align: left;
 }
 
-/*********************Text Styles***************/
+/*********************Element Styles***************/
 .elements {
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: center;
+}
+
+/*********************Pictures Styles***************/
+.pictures {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+    border-top: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+#adjusting {
+    width:25%;
 }
 
