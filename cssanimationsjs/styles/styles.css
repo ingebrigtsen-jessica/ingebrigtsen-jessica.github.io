@@ -151,7 +151,7 @@ p {
 
 .spin .rotate {
     animation-name: spin;
-    animation-duration: 5000ms;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-play-state: running;
@@ -172,4 +172,45 @@ p {
 
 .spin button {
     margin-top: 2.5rem;
+}
+
+/*********************Animation Move***************/
+
+.move {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right: 2px dashed #C5F5F0;
+    border-top: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.move .box5 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color:#f1fdfb;
+    margin: auto;
+    position: relative;
+}
+
+.move button {
+    margin-top: 2.5rem;
+}
+
+.move .walkAbout {
+    animation: startUp 10s 2;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.move .pauseWalk{
+    animation-play-state: paused;
+}
+
+@keyframes startUp{
+    0%   {background:#f5c5ca; left: 0px; top: 0px;}
+    20%  {background: #C5F5F0; left: 175px; top: 0px;}
+    40%  {background:#f5c5ca; left: 175px; top: 175px;}
+    60%  {background: #C5F5F0; left: -175px; top: 175px;}
+    80%  {background:#f5c5ca; left: -175px; top: 0px;}
+    100% {background:#C5F5F0; left: 0px; top: 0px;}
 }
