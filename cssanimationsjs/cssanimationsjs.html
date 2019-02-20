@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+    maximum-scale=1">
+    <title>CSS Animations JS</title>
+    <meta name="cssanimationsjs" content="CSS Animations and Transitions with JS">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7cShadows+Into+Light%7cDancing+Script%7cNoticia+Text"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">CSS Animations & Transitions with JS</a></h1>
+<div class="colors">
+    <h2>Transition: Colors</h2>
+    <div id="box1"></div>
+    <button onclick="changeColor('#f5c5ca')">Pink</button>
+    <button onclick="changeColor('#f1fdfb')">White</button>
+    <button onclick="changeColor('#C5F5F0')">Blue</button>
+    <p>Using a Linear transition to change colors</p>
+</div>
+<div class="zoom">
+        <h2>Transition: Zoom</h2>
+        <div class="box2">Can You See Me?</div>
+        <button onclick="changeZoom()">Zoom</button>
+        <p>Using an Ease Transition, and a class toggle</p>
+    </div>
+    <div class="stretch">
+            <h2>Transition: Stretch</h2>
+            <div class="box3"></div>
+            <button class="pausebtn" onclick="changeStretch()">Stretch</button>
+           
+        </div>
+    </div>
+    <script src="scripts/transitions.js"></script>
+</body>
+
+</html>

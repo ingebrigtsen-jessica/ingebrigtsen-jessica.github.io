@@ -1,0 +1,127 @@
+body {
+    background-color: #4e6260;
+    font-family: 'Noticia Text', serif;
+}
+
+/***************Grid Container************/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1.25rem;
+}
+
+h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #C5F5F0;
+    font-size: 3rem;
+}
+
+h1 a {
+    color: #C5F5F0;
+}
+
+h1 a:link {
+    text-decoration: none;
+}
+
+h1 a:visited {
+    color: #C5F5F0;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f5c5ca;
+}
+
+button {
+    margin: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+}
+
+/*********************Transition Colors***************/
+.colors {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.colors #box1 {
+    height: 3rem;
+    width: 15rem;
+    margin: auto;
+    padding: .5rem;
+    background-color: #C5F5F0;
+}
+.colors button {
+    margin: 1rem;
+    margin-top: 1.5rem;
+}
+
+/*********************Transition Zoom***************/
+.zoom {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+    font-size: 7px;
+}
+
+.zoom .box2 {
+    height: 3rem;
+    width: 10rem;
+    margin: auto;
+    padding: .5rem;
+    background-color: #f1fdfb;
+    transition: all 2.0s ease;
+}
+
+.zoom .changeZoom{
+    height: 10rem;
+    width: 20rem;
+    font-size: 2rem;
+}
+
+
+.zoom button {
+    margin: 1rem;
+    margin-top: 1.5rem;
+}
+
+/*********************Transition Stretch***************/
+.stretch {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.stretch .box3 {
+    height: 3rem;
+    width: 5rem;
+    margin: auto;;
+    padding: .5rem;
+    background-color: #C5F5F0;
+    transition: width 2.0s ease-out;
+}
+
+.stretch .changeStretch {
+    width: 15rem;
+}
+
+.stretch button {
+    margin: 1rem;
+    margin-top: 1.5rem;
+}
