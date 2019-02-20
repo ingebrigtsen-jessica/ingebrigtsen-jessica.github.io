@@ -51,6 +51,7 @@ p {
 }
 
 /*********************Transition Colors***************/
+
 .colors {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -65,12 +66,14 @@ p {
     padding: .5rem;
     background-color: #C5F5F0;
 }
+
 .colors button {
     margin: 1rem;
     margin-top: 1.5rem;
 }
 
 /*********************Transition Zoom***************/
+
 .zoom {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -88,12 +91,11 @@ p {
     transition: all 2.0s ease;
 }
 
-.zoom .changeZoom{
+.zoom .changeZoom {
     height: 10rem;
     width: 20rem;
     font-size: 2rem;
 }
-
 
 .zoom button {
     margin: 1rem;
@@ -101,17 +103,18 @@ p {
 }
 
 /*********************Transition Stretch***************/
+
 .stretch {
     grid-column-start: 3;
     grid-column-end: 4;
-    border-right: 2px dashed #C5F5F0;
     text-align: center;
 }
 
 .stretch .box3 {
     height: 3rem;
     width: 5rem;
-    margin: auto;;
+    margin: auto;
+    ;
     padding: .5rem;
     background-color: #C5F5F0;
     transition: width 2.0s ease-out;
@@ -124,4 +127,49 @@ p {
 .stretch button {
     margin: 1rem;
     margin-top: 1.5rem;
+}
+
+/*********************Animation Spin***************/
+
+.spin {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+    border-top: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.spin .box4 {
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid #C5F5F0;
+    
+}
+
+.spin .rotate {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+.spin .rotate:hover {
+    animation-play-state: paused;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin button {
+    margin-top: 2.5rem;
 }
