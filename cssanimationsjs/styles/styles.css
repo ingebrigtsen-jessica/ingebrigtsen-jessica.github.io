@@ -198,6 +198,7 @@ p {
 }
 
 .move .walkAbout {
+    /*animation will be called, then the reverse will happen*/
     animation: startUp 10s 2;
     animation-direction: alternate;
     animation-play-state: running;
@@ -213,4 +214,45 @@ p {
     60%  {background: #C5F5F0; left: -175px; top: 175px;}
     80%  {background:#f5c5ca; left: -175px; top: 0px;}
     100% {background:#C5F5F0; left: 0px; top: 0px;}
+}
+
+/*********************Animation Combine***************/
+
+.combined {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-top: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.combined .box6 {
+    width: 75px;
+    height: 75px;
+    background-color:#C5F5F0;
+    margin: left;
+    position: relative;
+}
+
+.combined button {
+    margin-top: 2.5rem;
+}
+
+.combined .spinMove {
+    /*animation will be called, then the reverse will happen*/
+    animation: comboTime 3s 2;
+    animation-direction: alternate;
+  
+}
+
+@keyframes comboTime{
+    0%   {background:#f5c5ca; left: 0px; top: 0px;}
+    35%  {background: #C5F5F0; left: 175px; top: 0px;}
+    75%  {background:#f5c5ca; left: 175px; top: 175px;}
+    100% {background:#C5F5F0; left: 0px; top: 0px;}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

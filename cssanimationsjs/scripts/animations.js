@@ -33,3 +33,9 @@ function reset() {
     let circle = document.getElementsByClassName('box5')[0];
     circle.classList.remove("walkAbout");
 }
+
+function combine() {
+    let square = document.getElementsByClassName('box6')[0];
+    square.classList.add("spinMove");
+    
+}
