@@ -157,7 +157,7 @@ p {
     animation-play-state: running;
 }
 
-.spin .rotate:hover {
+.spin .pauseSpin {
     animation-play-state: paused;
 }
 

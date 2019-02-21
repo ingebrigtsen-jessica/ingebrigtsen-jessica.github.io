@@ -4,14 +4,16 @@ function spinner() {
     let button = document.getElementsByClassName('spinbtn')[0];
 
     if (button.innerHTML == "Spin") {
-        button.innerHTML = "Reset";
+        button.innerHTML = "Pause";
+        triangle.classList.add("rotate");
+        triangle.classList.remove("pauseSpin");
     }
 else {
     button.innerHTML = "Spin";
+    triangle.classList.add("pauseSpin");
 
 }
 
-triangle.classList.toggle("rotate");
 
 }
 
