@@ -69,6 +69,54 @@ h2 {
     grid-column-start: 2;
     grid-column-end: 3;
 }
+.topic3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.topic3 button{
+    margin-top: 3rem;
+}
+.topic4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.topic5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.topic6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.topic7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.topic8 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.topic9 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.topic10 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.topic11 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.topic12 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.topic13 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
 
 button {
     background-color: #4e6260;
