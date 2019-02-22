@@ -16,7 +16,20 @@
 <body>
     <div class="container">
         <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">Standard JavaScript Events</a></h1>
+        <div class="changes">
+            <h2>onChange</h2>
+            <div class="choices">
+            <select id="selection" name="colors" onchange="changeColor(this.value)">
+                    <option selected disabled>Select Color</option>
+                    <option value="pink">Pink</option>
+                    <option value="blue">Blue</option>
+                    <option value="white">White</option>
+                </select>
+                </div>
+                <div class="results"></div>
+        </div>
     </div>
+    <script src="scripts/events.js"></script>
 </body>
 
 </html>
