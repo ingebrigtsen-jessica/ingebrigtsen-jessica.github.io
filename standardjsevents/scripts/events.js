@@ -1,11 +1,11 @@
 //mouse over
-document.getElementById('pink').addEventListener("mouseover", function() {
+document.getElementById('pink').addEventListener("mouseover", function () {
     changeColor(1);
 });
-document.getElementById('blue').addEventListener("mouseover", function() {
+document.getElementById('blue').addEventListener("mouseover", function () {
     changeColor(2);
 });
-document.getElementById('white').addEventListener("mouseover", function() {
+document.getElementById('white').addEventListener("mouseover", function () {
     changeColor(3);
 });
 
@@ -21,25 +21,31 @@ function changeColor(color) {
     switch (color) {
         case "pink":
         case 1:
+        case "p":
+        case "P":
             results.style.background = "#f5c5ca";
             break;
         case "blue":
         case 2:
+        case "b":
+        case "B":
             results.style.background = "#C5F5F0";
             break;
         case "white":
         case 3:
+        case "w":
+        case "W":
             results.style.background = "#f1fdfb";
             break;
         default:
-        alert = "sorry!";
+            results.style.background = "transparent";
             break;
 
     }
 }
 
 
-function mouseOut(){
+function mouseOut() {
     let results = document.getElementsByClassName('results')[0];
     results.style.background = "transparent";
 

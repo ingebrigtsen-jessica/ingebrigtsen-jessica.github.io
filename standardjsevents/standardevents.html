@@ -18,38 +18,38 @@
         <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">Standard JavaScript Events</a></h1>
         <div class="changes">
             <h2>onChange</h2>
-            <h2>onClick</h2>
-            <h2>onMouseOver/Out</h2>
-            <h2>Results</h2>
-            <div class="choices">
-                <select id="selection" name="colors" onchange="changeColor(this.value)">
-                    <option selected disabled>Select Color</option>
-                    <option value="pink">Pink</option>
-                    <option value="blue">Blue</option>
-                    <option value="white">White</option>
-                </select>
-                <p>The color in the results column will change each time there is a change in selection</p>
-            </div>
-            <div class="newChoices">
-                <button value="pink" onclick="changeColor(this.value)">Pink</button>
-                <button value="blue" onclick="changeColor(this.value)">Blue</button>
-                <button value="white" onclick="changeColor(this.value)">White</button>
-                <p>The color in the results column will change each time the button is clicked</p>
-            </div>
-            <div class="moreChoices">
-                <p><span id="pink">Pink</span></p>
-                <p><span id="blue">Blue</span></p>
-                <p><span id="white">White</span></p>
-                <p class="info">The color in the results column will change when you mouse over and mouse out</p>
-            </div>
-            <div class="results"></div>
-
+            <select id="selection" name="colors" onchange="changeColor(this.value)">
+                <option selected disabled>Select Color</option>
+                <option value="pink">Pink</option>
+                <option value="blue">Blue</option>
+                <option value="white">White</option>
+            </select>
+            <p>The color in the results column will change each time there is a change in selection</p>
         </div>
-
-
-
-
-
+        <div class="newChoices">
+            <h2>onClick</h2>
+            <button value="pink" onclick="changeColor(this.value)">Pink</button>
+            <button value="blue" onclick="changeColor(this.value)">Blue</button>
+            <button value="white" onclick="changeColor(this.value)">White</button>
+            <p>The color in the results column will change each time the button is clicked</p>
+        </div>
+        <div class="moreChoices">
+            <h2>onMouseOver/Out</h2>
+            <p><span id="pink">Pink</span>
+                <span id="blue">Blue</span>
+                <span id="white">White</span></p>
+            <p>The color in the results column will change when you mouse over and mouse out</p>
+        </div>
+        <div class="box">
+            <h2>Results</h2>
+            <div class="results"></div>
+        </div>
+        <div class="keyUp">
+            <h2>onKeyUp</h2>
+            <input onkeyup="changeColor(this.value)" size="2">
+            <p>To see the colors change in the results column press: <br>
+             P for pink - B for blue - or - W for white</p>
+        </div>
 
     </div>
     <script src="scripts/events.js"></script>
