@@ -19,6 +19,7 @@
         <div class="changes">
             <h2>onChange</h2>
             <h2>onClick</h2>
+            <h2>onMouseOver/Out</h2>
             <h2>Results</h2>
             <div class="choices">
                 <select id="selection" name="colors" onchange="changeColor(this.value)">
@@ -34,6 +35,12 @@
                 <button value="blue" onclick="changeColor(this.value)">Blue</button>
                 <button value="white" onclick="changeColor(this.value)">White</button>
                 <p>The color in the results column will change each time the button is clicked</p>
+            </div>
+            <div class="moreChoices">
+                <p><span id="pink">Pink</span></p>
+                <p><span id="blue">Blue</span></p>
+                <p><span id="white">White</span></p>
+                <p class="info">The color in the results column will change when you mouse over and mouse out</p>
             </div>
             <div class="results"></div>
 

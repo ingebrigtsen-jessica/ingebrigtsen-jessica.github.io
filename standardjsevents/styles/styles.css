@@ -50,17 +50,17 @@ h3 {
 
 p {
     color: #f1fdfb;
-    margin: 1.5rem;
+    margin-left: .5rem;
 }
 
 /*********************Color Selection***************/
 
 .changes {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 4;
     border-right: 2px dashed #C5F5F0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1rem;
 }
 
@@ -84,6 +84,12 @@ p {
     padding: 1rem;
     margin-top: 0;
 }
+.changes h2:nth-child(4) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    padding: 1rem;
+    margin-top: 0;
+}
 
 .changes .choices {
     grid-column-start: 1;
@@ -96,10 +102,25 @@ p {
     grid-column-end: 3;
     border-right: 2px dashed #C5F5F0;
 }
-
-.changes .results {
+.changes .moreChoices {
     grid-column-start: 3;
     grid-column-end: 4;
+    border-right: 2px dashed #C5F5F0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.moreChoices .info{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.moreChoices p {
+    margin-right: .5rem;
+}
+.changes .results {
+    grid-column-start: 4;
+    grid-column-end: 5;
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -109,6 +130,6 @@ p {
     margin-right: 25%;
 }
 .changes button {
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
