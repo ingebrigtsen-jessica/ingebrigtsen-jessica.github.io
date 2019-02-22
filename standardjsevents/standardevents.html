@@ -18,16 +18,32 @@
         <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">Standard JavaScript Events</a></h1>
         <div class="changes">
             <h2>onChange</h2>
+            <h2>onClick</h2>
+            <h2>Results</h2>
             <div class="choices">
-            <select id="selection" name="colors" onchange="changeColor(this.value)">
+                <select id="selection" name="colors" onchange="changeColor(this.value)">
                     <option selected disabled>Select Color</option>
                     <option value="pink">Pink</option>
                     <option value="blue">Blue</option>
                     <option value="white">White</option>
                 </select>
-                </div>
-                <div class="results"></div>
+                <p>The color in the results column will change each time there is a change in selection</p>
+            </div>
+            <div class="newChoices">
+                <button value="pink" onclick="changeColor(this.value)">Pink</button>
+                <button value="blue" onclick="changeColor(this.value)">Blue</button>
+                <button value="white" onclick="changeColor(this.value)">White</button>
+                <p>The color in the results column will change each time the button is clicked</p>
+            </div>
+            <div class="results"></div>
+
         </div>
+
+
+
+
+
+
     </div>
     <script src="scripts/events.js"></script>
 </body>
