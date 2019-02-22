@@ -110,3 +110,70 @@ span {
     text-align: center;
     margin-top: 1rem;
 }
+
+/*********************onLoad***************/
+.onLoad {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/*********************onTouch***************/
+.onTouch {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: center;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.onTouch h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#touch1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+}
+
+.onTouch #touch1 p {
+    background-color:#f5c5ca;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+#touch2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right: 2px dashed #C5F5F0;
+}
+
+.onTouch #touch2 p {
+    background-color:#C5F5F0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+#touch3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.onTouch #touch3 p {
+    background-color:#f1fdfb;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+.onTouch p {
+    margin-top: 20%;
+    font-size: 2rem;
+    color: black;
+}

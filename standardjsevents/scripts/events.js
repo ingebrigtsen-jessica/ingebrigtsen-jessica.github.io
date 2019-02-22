@@ -14,6 +14,16 @@ document.getElementById('pink').addEventListener("mouseout", mouseOut);
 document.getElementById('blue').addEventListener("mouseout", mouseOut);
 document.getElementById('white').addEventListener("mouseout", mouseOut);
 
+//onTouch
+document.getElementById('touchPink').addEventListener('touchstart', function() {
+    changeColor(1);
+});
+document.getElementById('touchBlue').addEventListener('touchstart', function() {
+    changeColor(2);
+});
+document.getElementById('touchWhite').addEventListener('touchstart', function() {
+    changeColor(3);
+});
 function changeColor(color) {
 
     let results = document.getElementsByClassName('results')[0];
@@ -44,9 +54,12 @@ function changeColor(color) {
     }
 }
 
-
 function mouseOut() {
     let results = document.getElementsByClassName('results')[0];
     results.style.background = "transparent";
 
+}
+
+function printMessage() {
+    let message = document.getElementById('loaded').innerHTML = "This message was put here by onLoad."
 }

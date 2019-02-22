@@ -13,7 +13,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body onload="printMessage()">
     <div class="container">
         <h1><a href="https://ingebrigtsen-jessica.github.io/index.html">Standard JavaScript Events</a></h1>
         <div class="changes">
@@ -48,7 +48,24 @@
             <h2>onKeyUp</h2>
             <input onkeyup="changeColor(this.value)" size="2">
             <p>To see the colors change in the results column press: <br>
-             P for pink - B for blue - or - W for white</p>
+                P for pink - B for blue - or - W for white</p>
+        </div>
+        <div class="onLoad">
+            <h2>onLoad</h2>
+            <p id="loaded"></p>
+        </div>
+        <div class="onTouch">
+            <h2>onTouch</h2>
+            <div id="touch1">
+                <p id="touchPink">Pink</p>
+            </div>
+            <div id="touch2">
+                <p id="touchBlue">Blue</p>
+            </div>
+            <div id="touch3">
+                <p id=touchWhite>White</p>
+            </div>
+
         </div>
 
     </div>
