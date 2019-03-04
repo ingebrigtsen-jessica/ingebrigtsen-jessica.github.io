@@ -37,6 +37,8 @@ h2 {
     text-align: center;
     font-size: 2.5rem;
     color: #f5c5ca;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
 }
 
 button {
@@ -49,4 +51,138 @@ p {
     color: #C5F5F0;
     font-family: 'Noticia Text', serif;
     padding: 1rem;
+}
+
+/*********************Transforms Scale***************/
+
+.scaling {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.scaling #scalexample {
+    width: 5rem;
+    height: 2rem;
+    background-color: #f1fdfb;
+    margin: auto;
+}
+
+/* The transform scale property enlarges the div, keeping the same scale as before*/
+.scaling #scalexample:hover {
+    transform: scale(2);
+}
+
+/*********************Transforms Skew***************/
+
+.skewing {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.skewing #skewexample {
+    width: 3rem;
+    height: 2rem;
+    background-color: #f1fdfb;
+    margin: auto;
+}
+
+/* The transform skew property tilts an element by changing the X, Y, or both*/
+.skewing #skewexample:hover {
+    transform: skewX(-25deg);
+    transform: skewY(-50deg);
+}
+
+/*********************Transforms Rotate***************/
+
+.rotating {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.rotating #rotatexample {
+    width: 3rem;
+    height: 5rem;
+    background-color: #f1fdfb;
+    margin: auto;
+}
+
+/* The transform rotate property turns the element*/
+.rotating #rotatexample:hover {
+    transform: rotate(-40deg);
+
+}
+
+/*********************Transforms Translate***************/
+
+.translating {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.translating #translatexample {
+    width: 4rem;
+    height: 4rem;
+    background-color: #f1fdfb;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* The transform translate property moves the element (x, y)*/
+.translating #translatexample:hover {
+    transform: translate(2rem, 2rem);
+}
+
+/*********************Transforms Multiples***************/
+
+.multiples {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.multiples h2 {
+    margin-bottom: 0;
+}
+
+.multiples #multiplexample {
+    width: 3rem;
+    height: 3rem;
+    background-color: #f1fdfb;
+    margin: auto;
+}
+
+/* You can combine transform properties by listing them one after the other.*/
+.multiples #multiplexample:hover {
+    transform: rotate(33deg) scale(3);
+}
+
+/*********************Transforms Multiples2***************/
+
+.multiples2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.multiples2 h2 {
+    margin-bottom: 0;
+}
+.multiples2 #multiples2example {
+    width: 4rem;
+    height: 5rem;
+    background-color: #f1fdfb;
+    margin: auto;
+}
+
+/* You can combine transform properties by listing them one after the other.*/
+.multiples2 #multiples2example:hover {
+    transform: skewX(10deg) skewY(15deg) translate(1.5rem, 2rem)
 }
