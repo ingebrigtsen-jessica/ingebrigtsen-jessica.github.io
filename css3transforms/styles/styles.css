@@ -37,8 +37,7 @@ h2 {
     text-align: center;
     font-size: 2.5rem;
     color: #f5c5ca;
-    margin-top: 0;
-    margin-bottom: 1.25rem;
+    margin: 0;
 }
 
 button {
@@ -51,6 +50,12 @@ p {
     color: #C5F5F0;
     font-family: 'Noticia Text', serif;
     padding: 1rem;
+}
+
+p.info {
+    font-size: 1rem;
+    color: #C5F5F0;
+    margin: 0;
 }
 
 /*********************Transforms Scale***************/
@@ -148,8 +153,8 @@ p {
     text-align: center;
 }
 
-.multiples h2 {
-    margin-bottom: 0;
+.multiples p.info {
+    color: #f1fdfb;
 }
 
 .multiples #multiplexample {
@@ -172,16 +177,15 @@ p {
     text-align: center;
 }
 
-.multiples2 h2 {
-    margin-bottom: 0;
-}
 .multiples2 #multiples2example {
     width: 4rem;
     height: 5rem;
     background-color: #f1fdfb;
     margin: auto;
 }
-
+.multiples2 p.info {
+    color: #f1fdfb;
+}
 /* You can combine transform properties by listing them one after the other.*/
 .multiples2 #multiples2example:hover {
     transform: skewX(10deg) skewY(15deg) translate(1.5rem, 2rem)
