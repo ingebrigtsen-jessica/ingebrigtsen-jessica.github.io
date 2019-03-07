@@ -133,7 +133,7 @@ p.info {
 .nudge #rectangle {
     background-color: #f5c5ca;
     width: 10rem;
-    height: 10rem;
+    height: 5rem;
     margin: auto;
     margin-top: 1.25rem;
     animation: nudge 2s linear 6 alternate;
@@ -204,5 +204,31 @@ p.info {
     }
     100% {
         transform: skewY(-20deg);
+    }
+} 
+
+/*********************Animations Rotate***************/
+
+.rotate {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.rotate #rectangle2 {
+    background-color: #f5c5ca;
+    width: 5rem;
+    height: 10rem;
+    margin: auto;
+    margin-top: 1.25rem;
+    animation: rotate 3s infinite;
+}
+
+ @keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 } 
