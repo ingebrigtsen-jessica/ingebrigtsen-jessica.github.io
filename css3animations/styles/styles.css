@@ -1,0 +1,123 @@
+body {
+    background-color: #4e6260;
+    font-family: 'Noticia Text', serif;
+}
+
+/***************Grid Container************/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1.25rem;
+}
+
+h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #C5F5F0;
+    font-size: 3rem;
+}
+
+h1 a {
+    color: #C5F5F0;
+}
+
+h1 a:link {
+    text-decoration: none;
+}
+
+h1 a:visited {
+    color: #C5F5F0;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f5c5ca;
+    margin: 0;
+}
+
+button {
+    margin: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #C5F5F0;
+    font-family: 'Noticia Text', serif;
+    padding: 1rem;
+}
+
+p.info {
+    font-size: 1rem;
+    color: #C5F5F0;
+    margin: 0;
+}
+
+/*********************Animations Pulse***************/
+
+.colors {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.colors #square {
+    background-color: #C5F5F0;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    margin-top: 1.25rem;
+    animation: pulse 4s 2;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #C5F5F0;
+    }
+    75% {
+        background-color: #f5c5ca;
+    }
+    100% {
+        background-color: #f1fdfb;
+    }
+}
+
+/*********************Animations Stretch***************/
+
+.stretch {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.stretch #circle {
+    background-color: #f1fdfb;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    margin-top: 1.25rem;
+    animation: stretch 3s ease-in 0s alternate 4 none running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(.4);
+        background-color: #f1fdfb;
+    }
+    50% {
+        transform: scale(1);
+        background-color: #f5c5ca;
+    }
+    100% {
+        transform: scale(1.5);
+        background-color: #C5F5F0;
+    }
+}
