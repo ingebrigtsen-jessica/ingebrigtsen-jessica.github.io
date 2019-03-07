@@ -291,3 +291,23 @@ to {
 }
 
 }
+
+/*********************Animations Flash***************/
+
+.flash {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.flash #text {
+    color: #f1fdfb;
+    font-size: 3rem;    
+    animation: flash linear 2s infinite; 
+}
+
+@keyframes flash {
+    0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
