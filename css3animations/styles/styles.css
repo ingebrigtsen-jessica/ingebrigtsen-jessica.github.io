@@ -121,3 +121,88 @@ p.info {
         background-color: #C5F5F0;
     }
 }
+
+/*********************Animations Nudge***************/
+
+.nudge {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.nudge #rectangle {
+    background-color: #f5c5ca;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    margin-top: 1.25rem;
+    animation: nudge 2s linear 6 alternate;
+}
+
+@keyframes nudge {
+    0% {
+        transform: translate(0,0);
+    }
+
+    50% {
+        transform: translate (10rem, 0);
+    }
+
+    100% {
+        transform: translate(-10rem, 0);
+    }
+}
+
+/*********************Animations SkewX***************/
+
+.skewx {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.skewx #square2 {
+    background-color: #C5F5F0;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    margin-top: 1.25rem;
+    animation: skewx 3s 8 alternate;
+}
+
+ @keyframes skewx {
+    0% {
+        transform: skewX(20deg);
+    }
+    100% {
+        transform: skewX(-20deg);
+    }
+} 
+
+/*********************Animations SkewY***************/
+
+.skewy {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.skewy #square3 {
+    background-color: #f1fdfb;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    margin-top: 1.25rem;
+    animation: skewy 3s 8 alternate;
+}
+
+ @keyframes skewy {
+    0% {
+        transform: skewY(20deg);
+    }
+    100% {
+        transform: skewY(-20deg);
+    }
+} 
