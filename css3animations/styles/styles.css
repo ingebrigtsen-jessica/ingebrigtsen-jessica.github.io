@@ -141,13 +141,11 @@ p.info {
 
 @keyframes nudge {
     0% {
-        transform: translate(0,0);
+        transform: translate(0, 0);
     }
-
     50% {
-        transform: translate (10rem, 0);
+        transform: translate(10rem, 0);
     }
-
     100% {
         transform: translate(-10rem, 0);
     }
@@ -171,14 +169,14 @@ p.info {
     animation: skewx 3s 8 alternate;
 }
 
- @keyframes skewx {
+@keyframes skewx {
     0% {
         transform: skewX(20deg);
     }
     100% {
         transform: skewX(-20deg);
     }
-} 
+}
 
 /*********************Animations SkewY***************/
 
@@ -198,14 +196,14 @@ p.info {
     animation: skewy 3s 8 alternate;
 }
 
- @keyframes skewy {
+@keyframes skewy {
     0% {
         transform: skewY(20deg);
     }
     100% {
         transform: skewY(-20deg);
     }
-} 
+}
 
 /*********************Animations Rotate***************/
 
@@ -224,14 +222,14 @@ p.info {
     animation: rotate 3s infinite;
 }
 
- @keyframes rotate {
+@keyframes rotate {
     0% {
         transform: rotate(0);
     }
     100% {
         transform: rotate(360deg);
     }
-} 
+}
 
 /*********************Animations Bounce***************/
 
@@ -253,10 +251,43 @@ p.info {
 }
 
 @keyframes bounce {
-    0%, 100% {
+    0%, 50%, 100% {
         transform: translateY(0);
       }
-      50% {
+      25% {
+        transform: translateY(-30px);
+      }
+      75% {
         transform: translateY(-15px);
       }
+}
+
+/*********************Animations Bounce & Move***************/
+
+.move {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right: 2px dashed #C5F5F0;
+    text-align: center;
+}
+
+.move #circle3 {
+    background-image: radial-gradient(circle, #f1fdfb, #f5c5ca, #C5F5F0);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 1.25rem;
+    position:relative;
+    animation: bounce 1s infinite, moving 3s linear alternate infinite;
+}
+
+@keyframes moving {
+from {
+    left: -45%;
+}
+to {
+    left: 40%;
+}
+
 }
