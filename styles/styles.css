@@ -118,6 +118,11 @@ h2 {
     grid-column-end: 2;
 }
 
+.topic14 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
 button {
     background-color: #4e6260;
     color: #f1fdfb;
