@@ -1,0 +1,37 @@
+body {
+    background-image: url(/finalproject/images/basketballbackground.jpg);
+}
+
+/***************Grid Container************/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.25rem;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.header #nbalogo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 10%;
+    margin-left: 1rem;
+
+    
+}
+.header h1 {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    font-family: 'Markazi Text', serif;
+    text-align: left;
+    font-size: 3rem;
+}
+
+
+
