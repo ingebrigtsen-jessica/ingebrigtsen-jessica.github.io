@@ -24,6 +24,7 @@ function checkWeather(town) {
     let currenttemp, mph = '';
     weatherRequest.onload = function () {
         let weatherData = (weatherRequest.response);
+        console.log(weatherData);
         currenttemp = parseFloat(Math.round(weatherData.main.temp));
         mph = parseFloat(weatherData.wind.speed);
         document.getElementById("currenttemp").innerHTML = currenttemp;

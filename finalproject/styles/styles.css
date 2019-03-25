@@ -1,6 +1,12 @@
+html {
+    height: 100%;
+}
 body {
-    background-image: url(../images/background2.png);
+    height: 100%;
+    margin: 0;
     background-repeat: no-repeat;
+    background-image: radial-gradient(circle,  #F28D0B, #5A4C3A, #2D2A26, #5A4C3A);
+    background-attachment: fixed;
 }
 
 h2 {
@@ -11,10 +17,22 @@ h2 {
     margin-top: 0;
 }
 
+button {
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+    color: white;
+}
+/*****************Container**************/
+.container {
+    text-align: center;
+ 
+}
+
 /****************Header********************/
 
 .header {
-    background-color: white;
+  
+   border-bottom: solid 2px #F28D0B;
     margin-left: .5rem;
     padding-right: .2rem;
     padding-left: .2rem;
@@ -28,26 +46,40 @@ h2 {
 }
 
 .header h1 {
+    color: white;
     font-family: 'Markazi Text', serif;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 0;
 }
 
 
-/***************Team Lists**************/
-ul {
-    list-style: none;
+/***************West**************/
+
+.west {
+    margin-top: 3rem;
+    border: dashed 1px #F28D0B;
+}
+.west h1 {
+    color: white;
+    font-size: 3rem;
 }
 
-ul li {
-    padding: 10px;
+.west a {
+    text-decoration: none;
 }
 
-#westTeams {
-    display: none;
+/***************East**************/
+.east {
+    margin-top: 3rem;
+    border: dashed 1px #F28D0B;
 }
 
-#eastTeams {
-    display: none;
+.east h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.east a {
+    text-decoration: none;
 }
