@@ -171,3 +171,51 @@ a{
 .netsfront {
     background-image: linear-gradient(#000000, #FFFFFF);
 }
+
+.hornetsfront {
+    background-image: linear-gradient(#1D1160, #00788C, #A1A1A4);
+}
+
+.bullsfront {
+    background-image: linear-gradient(#CE1141, #000000);
+}
+
+.cavsfront {
+    background-image: linear-gradient(#6F263D, #041E42, #FFB81C, #000000);
+}
+
+.pistonsfront {
+    background-image: linear-gradient(#C8102E, #006BB6, #BEC0C2, #002D62);
+}
+
+.pacersfront {
+    background-image: linear-gradient(#002D62, #FDBB30, #BEC0C2);
+}
+
+.heatfront {
+    background-image: linear-gradient(#98002E,  #F9A01B, #000000);
+}
+
+.bucksfront {
+    background-image: linear-gradient(#000000, #00471B,  #0077C0, #EEE1C0);
+}
+
+.knicksfront {
+    background-image: linear-gradient(#006BB6, #F58426, #BEC0C2, #000000);
+}
+
+.magicfront {
+    background-image: linear-gradient(#0077C0,  #C4CED4, #000000);
+}
+
+.sixersfront {
+    background-image: linear-gradient(#006BB6, #ED174C, #002B5C, #C4CED4);
+}
+
+.raptorsfront {
+    background-image: linear-gradient(#CE1141, #000000, #A1A1A4, #B4975A);
+}
+
+.wizardsfront {
+    background-image: linear-gradient(#002B5C, #E31837, #C4CED4);
+}
