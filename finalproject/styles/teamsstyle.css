@@ -1,0 +1,173 @@
+body {
+    /* background-color: #D2D0CA; */
+    background-image: radial-gradient(circle,  #F28D0B, #5A4C3A, #2D2A26, #5A4C3A);
+    height: 100%;
+    width: 95%;
+}
+
+a{
+    text-decoration: none;
+}
+/********************Header*****************/
+
+.header {
+    border-bottom: solid 2px #7F8382;
+    margin-left: .5rem;
+    padding-right: .2rem;
+    padding-left: .2rem;
+    max-width: 100%
+}
+
+.header #nbalogo {
+    max-width: 10%;
+    margin-left: .25rem;
+    margin-bottom: 0;
+}
+
+.header h1 {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+/*********************Images*****************/
+
+.icons {
+    width: 50%;
+}
+
+.container {
+    width: 100%;
+    height: 1500px;
+    margin: auto;
+    display:flex;
+    flex-flow: row;
+    flex-flow: wrap;
+    margin-left:2rem;
+    align-content: flex-start;
+}
+
+/******************Team Cards****************/
+
+.cardContainer {
+    background-color: transparent;
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    perspective: 1000px;
+    margin-left:2rem;
+    margin-top:2rem;
+}
+
+.card {
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    margin: 2rem;
+    position: relative;
+    border-radius: 10%;
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10%;
+}
+
+.front {
+    color: white;
+}
+
+.back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.front h2 {
+    margin-top: 3.5rem;
+    padding:.25rem;
+}
+
+.mavfront {
+    background-image: linear-gradient(#00538c, #002B5E, #B8C4CA);
+}
+
+.nugfront {
+    background-image: linear-gradient(#0E2240, #FEC524, #8B2131, #1D428A);
+}
+
+.warriorfront {
+    background-image: linear-gradient(#006BB6, #FDB927, #26282A);
+}
+
+.rocketsfront {
+    background-image: linear-gradient(#CE1141, #000000,  #C4CED4);
+}
+
+.clippersfront {
+    background-image: linear-gradient(#C8102E, #1D428A, #BEC0C2, #000000);
+}
+
+.lakersfront {
+    background-image: linear-gradient(#552583, #FDB927, #000000);
+}
+
+.memphisfront {
+    background-image: linear-gradient(#5D76A9, #12173F, #F5B112, #707271);
+}
+
+.timberfront {
+    background-image: linear-gradient(#0C2340, #236192, #9EA2A2, #78BE20);
+}
+
+.pelicansfront {
+    background-image: linear-gradient(#0C2340, #C8102E, #85714D);
+}
+
+.thunderfront {
+    background-image: linear-gradient(#007AC1, #EF3B24, #002D62, #FDBB30);
+}
+
+.sunsfront {
+    background-image: linear-gradient(#1D1160, #E56020, #000000, #63727A, #F9AD1B, #B95915, #BEC0C2);
+}
+
+.blazersfront {
+    background-image: linear-gradient(#E03A3E, #000000);
+}
+
+.kingsfront {
+    background-image: linear-gradient(#5A2D81, #63727A, #000000);
+}
+
+.spursfront {
+    background-image: linear-gradient(#C4CED4, #000000);
+}
+
+.jazzfront {
+    background-image: linear-gradient(#002B5C, #00471B, #F9A01B);
+}
+
+.hawksfront {
+    background-image: linear-gradient(#E03A3E, #C1D32F, #26282A);
+}
+
+.celticsfront {
+    background-image: linear-gradient(#007A33, #BA9653, #963821, #E59E6D, #000000);
+}
+
+.netsfront {
+    background-image: linear-gradient(#000000, #FFFFFF);
+}
