@@ -8,28 +8,44 @@
     <title>Western Conference</title>
     <meta name="Western Conference" content="Western Conference Teams">
     <link rel="stylesheet" href="styles/teamsstyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker%7cMarkazi+Text%7cOverpass:900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker%7cMarkazi+Text%7cOverpass:900i"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
         <img id="nbalogo" src="images/nbalogo.png">
-       <a href="finalproject.html"> <h1> Western Conference Standings</h1></a>
+        <a href="finalproject.html">
+            <h1> Western Conference Standings</h1>
+        </a>
     </div>
     <div class="container">
+       
         <div class="cardContainer">
-            <div class="card" onclick="flipped(0)">
+            <div class="card" onclick="flipped(0);teamRequests(108)">
                 <div class="front mavfront">
                     <h2>Dallas Mavericks</h2>
                     <img class="icons" src="images/mavericksicon.png">
                 </div>
                 <div class="back">
-                    <p>testing</p>
+                    <div class="statInfo">
+                        <h3 id="teamName"></h3>
+                        <p><span class="label"></span>
+                            <span class="value" id="currenttemp"></span></p>
+                        <p><span class="label"></span>
+                            <span id="currently" class="value"></span></p>
+                        <p> <span class="label">Wind Speed: </span>
+                            <span id="mph" class="value"></span></p>
+                        <p><span class="label">Wind Chill: </span>
+                            <span id="windchill" class="value"></span></p>
+                        <p><span class="label">Humidity: </span>
+                            <span id="humidity" class="value"></span></p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(1)">
+            <div class="card" onclick="flipped(1);teamRequests(99)">
                 <div class="front nugfront">
                     <h2>Denver Nuggets</h2>
                     <img class="icons" src="images/nuggetsicon.png">
@@ -40,7 +56,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(2)">
+            <div class="card" onclick="flipped(2);teamRequests(101)">
                 <div class="front warriorfront">
                     <h2>Golden State Warriors</h2>
                     <img class="icons" src="images/warriorsicon.png">
@@ -51,7 +67,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(3)">
+            <div class="card" onclick="flipped(3);teamRequests(109)">
                 <div class="front rocketsfront">
                     <h2>Houston Rockets</h2>
                     <img class="icons" src="images/rocketsicon.png">
@@ -62,7 +78,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(4)">
+            <div class="card" onclick="flipped(4);teamRequests(102)">
                 <div class="front clippersfront">
                     <h2>Los Angeles Clippers</h2>
                     <img class="icons" src="images/clippersicon.png">
@@ -73,7 +89,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(5)">
+            <div class="card" onclick="flipped(5);teamRequests(105)">
                 <div class="front lakersfront">
                     <h2>Los Angeles Lakers</h2>
                     <img class="icons" src="images/lakersicon.png">
@@ -84,7 +100,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(6)">
+            <div class="card" onclick="flipped(6);teamRequests(107)">
                 <div class="front memphisfront">
                     <h2>Memphis Grizzlies</h2>
                     <img class="icons" src="images/grizzliesicon.png">
@@ -95,7 +111,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(7)">
+            <div class="card" onclick="flipped(7);teamRequests(100)">
                 <div class="front timberfront">
                     <h2>Minnesota Timberwolves</h2>
                     <img class="icons" src="images/timberwolvesicon.png">
@@ -106,7 +122,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(8)">
+            <div class="card" onclick="flipped(8);teamRequests(110)">
                 <div class="front pelicansfront">
                     <h2>New Orleans Pelicans</h2>
                     <img class="icons" src="images/pelicansicon.png">
@@ -117,7 +133,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(9)">
+            <div class="card" onclick="flipped(9);teamRequests(96)">
                 <div class="front thunderfront">
                     <h2>Oklahoma City Thunder</h2>
                     <img class="icons" src="images/okcicon.png">
@@ -128,7 +144,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(10)">
+            <div class="card" onclick="flipped(10);teamRequests(104)">
                 <div class="front sunsfront">
                     <h2>Phoenix Suns</h2>
                     <img class="icons" src="images/sunsicon.png">
@@ -139,7 +155,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(11)">
+            <div class="card" onclick="flipped(11);teamRequests(97)">
                 <div class="front blazersfront">
                     <h2>Portland Trailblazers</h2>
                     <img class="icons" src="images/blazersicon.png">
@@ -150,7 +166,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(12)">
+            <div class="card" onclick="flipped(12);teamRequests(103)">
                 <div class="front kingsfront">
                     <h2>Sacramento Kings</h2>
                     <img class="icons" src="images/kingsicon.png">
@@ -161,7 +177,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(13)">
+            <div class="card" onclick="flipped(13);teamRequests(106)">
                 <div class="front spursfront">
                     <h2>San Antonio Spurs</h2>
                     <img class="icons" src="images/spursicon.png">
@@ -172,7 +188,7 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(14)">
+            <div class="card" onclick="flipped(14);teamRequests(98)">
                 <div class="front jazzfront">
                     <h2>Utah Jazz</h2>
                     <img class="icons" src="images/jazzicon.png">
@@ -185,6 +201,7 @@
     </div>
     </div>
     <script src="scripts/flipped.js"></script>
+    <script src="scripts/basketballdata.js"></script>
 </body>
 
 </html>
