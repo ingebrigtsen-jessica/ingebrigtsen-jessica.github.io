@@ -86,7 +86,6 @@ a{
 }
 
 .back {
-    background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
 }
@@ -100,122 +99,122 @@ a{
     padding:.25rem;
 }
 
-.mavfront {
+.mavfront, .mavback {
     background-image: linear-gradient(#00538c, #002B5E, #B8C4CA);
 }
 
-.nugfront {
+.nugfront, .nugback {
     background-image: linear-gradient(#0E2240, #FEC524, #8B2131, #1D428A);
 }
 
-.warriorfront {
+.warriorfront, .warriorback {
     background-image: linear-gradient(#006BB6, #FDB927, #26282A);
 }
 
-.rocketsfront {
+.rocketsfront, .rocketsback {
     background-image: linear-gradient(#CE1141, #000000,  #C4CED4);
 }
 
-.clippersfront {
+.clippersfront, .clippersback {
     background-image: linear-gradient(#C8102E, #1D428A, #BEC0C2, #000000);
 }
 
-.lakersfront {
+.lakersfront, .lakersback {
     background-image: linear-gradient(#552583, #FDB927, #000000);
 }
 
-.memphisfront {
+.memphisfront, .memphisback {
     background-image: linear-gradient(#5D76A9, #12173F, #F5B112, #707271);
 }
 
-.timberfront {
+.timberfront, .timberback{
     background-image: linear-gradient(#0C2340, #236192, #9EA2A2, #78BE20);
 }
 
-.pelicansfront {
+.pelicansfront, .pelicansback {
     background-image: linear-gradient(#0C2340, #C8102E, #85714D);
 }
 
-.thunderfront {
+.thunderfront, .thunderback {
     background-image: linear-gradient(#007AC1, #EF3B24, #002D62, #FDBB30);
 }
 
-.sunsfront {
+.sunsfront, .sunsback{
     background-image: linear-gradient(#1D1160, #E56020, #000000, #63727A, #F9AD1B, #B95915, #BEC0C2);
 }
 
-.blazersfront {
+.blazersfront, .blazersback {
     background-image: linear-gradient(#E03A3E, #000000);
 }
 
-.kingsfront {
+.kingsfront, .kingsback {
     background-image: linear-gradient(#5A2D81, #63727A, #000000);
 }
 
-.spursfront {
+.spursfront, .spursback {
     background-image: linear-gradient(#C4CED4, #000000);
 }
 
-.jazzfront {
+.jazzfront, .jazzback {
     background-image: linear-gradient(#002B5C, #00471B, #F9A01B);
 }
 
-.hawksfront {
+.hawksfront, .hawksback {
     background-image: linear-gradient(#E03A3E, #C1D32F, #26282A);
 }
 
-.celticsfront {
+.celticsfront, .celticsback {
     background-image: linear-gradient(#007A33, #BA9653, #963821, #E59E6D, #000000);
 }
 
-.netsfront {
+.netsfront, .netsback {
     background-image: linear-gradient(#000000, #FFFFFF);
 }
 
-.hornetsfront {
+.hornetsfront, .hornetsback {
     background-image: linear-gradient(#1D1160, #00788C, #A1A1A4);
 }
 
-.bullsfront {
+.bullsfront, .bullsback {
     background-image: linear-gradient(#CE1141, #000000);
 }
 
-.cavsfront {
+.cavsfront, .cavsback {
     background-image: linear-gradient(#6F263D, #041E42, #FFB81C, #000000);
 }
 
-.pistonsfront {
+.pistonsfront, .pistonsback {
     background-image: linear-gradient(#C8102E, #006BB6, #BEC0C2, #002D62);
 }
 
-.pacersfront {
+.pacersfront, .pacersback {
     background-image: linear-gradient(#002D62, #FDBB30, #BEC0C2);
 }
 
-.heatfront {
+.heatfront, .heatback {
     background-image: linear-gradient(#98002E,  #F9A01B, #000000);
 }
 
-.bucksfront {
+.bucksfront, .bucksback {
     background-image: linear-gradient(#000000, #00471B,  #0077C0, #EEE1C0);
 }
 
-.knicksfront {
+.knicksfront, .knicksback {
     background-image: linear-gradient(#006BB6, #F58426, #BEC0C2, #000000);
 }
 
-.magicfront {
+.magicfront, .magicback{
     background-image: linear-gradient(#0077C0,  #C4CED4, #000000);
 }
 
-.sixersfront {
+.sixersfront, .sixersback {
     background-image: linear-gradient(#006BB6, #ED174C, #002B5C, #C4CED4);
 }
 
-.raptorsfront {
+.raptorsfront, .raptorsback {
     background-image: linear-gradient(#CE1141, #000000, #A1A1A4, #B4975A);
 }
 
-.wizardsfront {
+.wizardsfront, .wizardsback {
     background-image: linear-gradient(#002B5C, #E31837, #C4CED4);
 }

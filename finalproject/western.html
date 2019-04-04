@@ -20,188 +20,190 @@
         </a>
     </div>
     <div class="container">
-       
+
         <div class="cardContainer">
-            <div class="card" onclick="flipped(0);teamRequests(108)">
+            <div class="card" onclick="flipped(0, document.getElementById('mavstats'), 108)">
                 <div class="front mavfront">
                     <h2>Dallas Mavericks</h2>
                     <img class="icons" src="images/mavericksicon.png">
                 </div>
-                <div class="back">
-                    <div class="statInfo">
-                        <h3 id="teamName"></h3>
-                        <p><span class="label"></span>
-                            <span class="value" id="currenttemp"></span></p>
-                        <p><span class="label"></span>
-                            <span id="currently" class="value"></span></p>
-                        <p> <span class="label">Wind Speed: </span>
-                            <span id="mph" class="value"></span></p>
-                        <p><span class="label">Wind Chill: </span>
-                            <span id="windchill" class="value"></span></p>
-                        <p><span class="label">Humidity: </span>
-                            <span id="humidity" class="value"></span></p>
+                <div class="back mavback">
+                    <div class="statInfo" id="mavstats">
                     </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(1);teamRequests(99)">
+            <div class="card" onclick="flipped(1, document.getElementById('nugstats'),99)">
                 <div class="front nugfront">
                     <h2>Denver Nuggets</h2>
                     <img class="icons" src="images/nuggetsicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back nugback">
+                    <div class="statInfo" id="nugstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(2);teamRequests(101)">
+            <div class="card" onclick="flipped(2, document.getElementById('warriorstats'),101)">
                 <div class="front warriorfront">
                     <h2>Golden State Warriors</h2>
                     <img class="icons" src="images/warriorsicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back warriorback">
+                    <div class="statInfo" id="warriorstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(3);teamRequests(109)">
+            <div class="card" onclick="flipped(3, document.getElementById('rocketstats'),109)">
                 <div class="front rocketsfront">
                     <h2>Houston Rockets</h2>
                     <img class="icons" src="images/rocketsicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back rocketsback">
+                    <div class="statInfo" id="rocketstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(4);teamRequests(102)">
+            <div class="card" onclick="flipped(4, document.getElementById('clipperstats'),102)">
                 <div class="front clippersfront">
                     <h2>Los Angeles Clippers</h2>
                     <img class="icons" src="images/clippersicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back clippersback">
+                    <div class="statInfo" id="clipperstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(5);teamRequests(105)">
+            <div class="card" onclick="flipped(5, document.getElementById('lakerstats'),105)">
                 <div class="front lakersfront">
                     <h2>Los Angeles Lakers</h2>
                     <img class="icons" src="images/lakersicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back lakersback">
+                    <div class="statInfo" id="lakerstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(6);teamRequests(107)">
+            <div class="card" onclick="flipped(6, document.getElementById('memphisstats'),107)">
                 <div class="front memphisfront">
                     <h2>Memphis Grizzlies</h2>
                     <img class="icons" src="images/grizzliesicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back memphisback">
+                    <div class="statInfo" id="memphisstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(7);teamRequests(100)">
+            <div class="card" onclick="flipped(7, document.getElementById('timberstats'),100)">
                 <div class="front timberfront">
                     <h2>Minnesota Timberwolves</h2>
                     <img class="icons" src="images/timberwolvesicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back timberback">
+                    <div class="statInfo" id="timberstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(8);teamRequests(110)">
+            <div class="card" onclick="flipped(8, document.getElementById('pelicanstats'),110)">
                 <div class="front pelicansfront">
                     <h2>New Orleans Pelicans</h2>
                     <img class="icons" src="images/pelicansicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back pelicansback">
+                    <div class="statInfo" id="pelicanstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(9);teamRequests(96)">
+            <div class="card" onclick="flipped(9, document.getElementById('thunderstats'),96)">
                 <div class="front thunderfront">
                     <h2>Oklahoma City Thunder</h2>
                     <img class="icons" src="images/okcicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back thunderback">
+                    <div class="statInfo" id="thunderstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(10);teamRequests(104)">
+            <div class="card" onclick="flipped(10, document.getElementById('sunstats'),104)">
                 <div class="front sunsfront">
                     <h2>Phoenix Suns</h2>
                     <img class="icons" src="images/sunsicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back sunsback">
+                    <div class="statInfo" id="sunstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(11);teamRequests(97)">
+            <div class="card" onclick="flipped(11, document.getElementById('blazerstats'),97)">
                 <div class="front blazersfront">
                     <h2>Portland Trailblazers</h2>
                     <img class="icons" src="images/blazersicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back blazersback">
+                    <div class="statInfo" id="blazerstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(12);teamRequests(103)">
+            <div class="card" onclick="flipped(12, document.getElementById('kingstats'),103)">
                 <div class="front kingsfront">
                     <h2>Sacramento Kings</h2>
                     <img class="icons" src="images/kingsicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back kingsback">
+                    <div class="statInfo" id="kingstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(13);teamRequests(106)">
+            <div class="card" onclick="flipped(13, document.getElementById('spurstats'),106)">
                 <div class="front spursfront">
                     <h2>San Antonio Spurs</h2>
                     <img class="icons" src="images/spursicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back spursback">
+                    <div class="statInfo" id="spurstats">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card" onclick="flipped(14);teamRequests(98)">
+            <div class="card" onclick="flipped(14, document.getElementById('jazzstats'),98)">
                 <div class="front jazzfront">
                     <h2>Utah Jazz</h2>
                     <img class="icons" src="images/jazzicon.png">
                 </div>
-                <div class="back">
-                    <p>testing</p>
+                <div class="back jazzback">
+                    <div class="statInfo" id="jazzstats">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
     <script src="scripts/flipped.js"></script>
-    <script src="scripts/basketballdata.js"></script>
 </body>
 
 </html>
