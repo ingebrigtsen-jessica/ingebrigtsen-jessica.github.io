@@ -30,24 +30,18 @@ function teamRequests(id, card) {
         let heading = document.createElement("H3");
         let text = document.createTextNode(teamName);
         heading.appendChild(text);
-        let rank = document.createElement("P");
-        text = document.createTextNode("Rank: " + team.rank);
-        rank.appendChild(text);
-        let wins = document.createElement("P");
-        text = document.createTextNode("Wins: " + team.stats.Wins["#text"]);
-        wins.appendChild(text);
-        let losses = document.createElement("P");
-        text = document.createTextNode("Losses: " + team.stats.Losses["#text"]);
-        losses.appendChild(text);
         card.appendChild(heading);
-        card.appendChild(rank);
-        card.appendChild(wins);
-        card.appendChild(losses);
+
+        let ranking = document.createElement("P");
+        text = document.createTextNode("Rank: " + team.rank);
+        ranking.appendChild(text);
+        let breakline = document.createElement("br");
+        ranking.appendChild(breakline);
+        text = document.createTextNode("Wins: " + team.stats.Wins["#text"] + " -- Losses: " + team.stats.Losses["#text"]);
+        ranking.appendChild(text);
+        card.appendChild(ranking);
         nextGame(id, card);
     };
-
-
-
 }
 
 function nextGame(id, card) {
@@ -63,24 +57,32 @@ function nextGame(id, card) {
         console.log(gameData);
         let games = gameData.fullgameschedule.gameentry[0];
         let nextGame = document.createElement("P");
+        nextGame.setAttribute("style", "padding: .25rem;");
         let text = '';
+        text = document.createTextNode("Next Game: ");
+        nextGame.appendChild(text);
+        let linebreak = document.createElement("br");
+        nextGame.appendChild(linebreak);
+
         if (games.homeTeam.ID == id) {
-            text = document.createTextNode("Next Game: " + games.homeTeam.City + " " + games.homeTeam.Name + " vs. " + games.awayTeam.City + " " + games.awayTeam.Name);
+            text = document.createTextNode(games.homeTeam.City + " " + games.homeTeam.Name + " vs. " + games.awayTeam.City + " " + games.awayTeam.Name);
             nextGame.appendChild(text);
-            card.appendChild(nextGame);
+
+
         }
         else {
-            text = document.createTextNode("Next Game: " + games.homeTeam.City + " " + games.homeTeam.Name + " @ " + games.awayTeam.City + " " + games.awayTeam.Name);
+            text = document.createTextNode(games.awayTeam.City + " " + games.awayTeam.Name + " @ " + games.homeTeam.City + " " + games.homeTeam.Name);
             nextGame.appendChild(text);
-            card.appendChild(nextGame);
+
         }
+
         let tempDate = games.date;
         let d = tempDate.split("-");
         let date = d[1] + "/" + d[2] + "/" + d[0];
-
-        let gameDate = document.createElement("P");
-        text = document.createTextNode("Date: " + date + " @ " + games.time);
-        gameDate.appendChild(text);
-        card.appendChild(gameDate);
+        text = document.createTextNode(date + " @ " + games.time);
+        let linebreak1 = document.createElement("br");
+        nextGame.appendChild(linebreak1);
+        nextGame.appendChild(text);
+        card.appendChild(nextGame);
     };
 }

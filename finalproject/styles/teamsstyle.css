@@ -1,13 +1,15 @@
 body {
-    /* background-color: #D2D0CA; */
-    background-image: radial-gradient(circle,  #F28D0B, #5A4C3A, #2D2A26, #5A4C3A);
+    background-image: radial-gradient(circle, #F28D0B, #5A4C3A, #2D2A26, #5A4C3A);
     height: 100%;
     width: 95%;
+    align-content: center;
+    justify-items: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 /********************Header*****************/
 
 .header {
@@ -19,7 +21,7 @@ a{
 }
 
 .header #nbalogo {
-    max-width: 10%;
+    max-width: 15%;
     margin-left: .25rem;
     margin-bottom: 0;
 }
@@ -28,47 +30,38 @@ a{
     color: white;
     font-family: 'Permanent Marker', cursive;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 0;
 }
 
 /*********************Images*****************/
 
 .icons {
-    width: 50%;
+    width: 40%;
 }
 
 .container {
     width: 100%;
     height: 1500px;
     margin: auto;
-    display:flex;
+    display: flex;
     flex-flow: row;
     flex-flow: wrap;
-    margin-left:2rem;
+    margin-left: .5rem;
     align-content: flex-start;
 }
 
 /******************Team Cards****************/
-
-.cardContainer {
-    background-color: transparent;
-    width: 200px;
-    height: 250px;
-    border-radius: 10%;
-    perspective: 1000px;
-    margin-left:2rem;
-    margin-top:2rem;
-}
 
 .card {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: 100%;
-    width: 100%;
-    margin: 2rem;
+    width: 350px;
+    height: 250px;
+    perspective: 1000px;
+    margin: 1rem;
     position: relative;
     border-radius: 10%;
 }
@@ -95,8 +88,15 @@ a{
 }
 
 .front h2 {
-    margin-top: 3.5rem;
-    padding:.25rem;
+    margin-top: 2rem;
+    padding: .25rem;
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: .5rem;
+    margin-bottom: .25rem;
 }
 
 .mavfront, .mavback {
@@ -112,7 +112,7 @@ a{
 }
 
 .rocketsfront, .rocketsback {
-    background-image: linear-gradient(#CE1141, #000000,  #C4CED4);
+    background-image: linear-gradient(#CE1141, #000000, #C4CED4);
 }
 
 .clippersfront, .clippersback {
@@ -127,7 +127,7 @@ a{
     background-image: linear-gradient(#5D76A9, #12173F, #F5B112, #707271);
 }
 
-.timberfront, .timberback{
+.timberfront, .timberback {
     background-image: linear-gradient(#0C2340, #236192, #9EA2A2, #78BE20);
 }
 
@@ -139,7 +139,7 @@ a{
     background-image: linear-gradient(#007AC1, #EF3B24, #002D62, #FDBB30);
 }
 
-.sunsfront, .sunsback{
+.sunsfront, .sunsback {
     background-image: linear-gradient(#1D1160, #E56020, #000000, #63727A, #F9AD1B, #B95915, #BEC0C2);
 }
 
@@ -192,19 +192,19 @@ a{
 }
 
 .heatfront, .heatback {
-    background-image: linear-gradient(#98002E,  #F9A01B, #000000);
+    background-image: linear-gradient(#98002E, #F9A01B, #000000);
 }
 
 .bucksfront, .bucksback {
-    background-image: linear-gradient(#000000, #00471B,  #0077C0, #EEE1C0);
+    background-image: linear-gradient(#000000, #00471B, #0077C0, #EEE1C0);
 }
 
 .knicksfront, .knicksback {
     background-image: linear-gradient(#006BB6, #F58426, #BEC0C2, #000000);
 }
 
-.magicfront, .magicback{
-    background-image: linear-gradient(#0077C0,  #C4CED4, #000000);
+.magicfront, .magicback {
+    background-image: linear-gradient(#0077C0, #C4CED4, #000000);
 }
 
 .sixersfront, .sixersback {
@@ -217,4 +217,25 @@ a{
 
 .wizardsfront, .wizardsback {
     background-image: linear-gradient(#002B5C, #E31837, #C4CED4);
+}
+
+.statInfo {
+    background-color: rgba(128, 128, 128, 0.3);
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    padding-top: .25rem;
+}
+
+p {
+    margin: .75rem;
+    font-size: 1.2rem;
+}
+
+.buckpic {
+    width: 30%;
+}
+
+.heatpic {
+    width: 50%;
 }
