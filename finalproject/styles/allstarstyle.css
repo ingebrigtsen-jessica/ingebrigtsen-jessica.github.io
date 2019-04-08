@@ -67,8 +67,9 @@ a {
 }
 
 .videos {
-    max-width: 100%;
-    padding: .2rem;
+
+    max-width: 85%;
+    padding: 1rem;
   
  
 }
@@ -90,6 +91,8 @@ h3 {
     margin-bottom: .5rem;
 }
 
-.three {
-    border-bottom: 2px dashed #F28D0B;
+.three, .skills, .dunk, .game {
+    border: 2px dashed #F28D0B;
+    padding: .5rem;
+    margin: 1rem;
 }

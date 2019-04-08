@@ -50,7 +50,7 @@ button {
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     font-size: 4rem;
-    margin-top: 0;
+    margin-top: 2rem;
 }
 
 
@@ -59,6 +59,8 @@ button {
 .west {
     margin-top: 3rem;
     border: dashed 1px #F28D0B;
+    max-width: 90%;
+    margin-left: 5%;
 }
 .west h1 {
     color: white;
@@ -73,6 +75,8 @@ button {
 .east {
     margin-top: 3rem;
     border: dashed 1px #F28D0B;
+    max-width: 90%;
+    margin-left: 5%;
 }
 
 .east h1 {
@@ -88,6 +92,8 @@ button {
 .allstar {
     margin-top: 3rem;
     border: dashed 1px #F28D0B;
+    max-width: 90%;
+    margin-left: 5%;
 }
 
 .allstar h1 {
