@@ -131,6 +131,7 @@ h3 {
     font-size: 2rem;
     margin-top: .5rem;
     margin-bottom: .25rem;
+    
 }
 
 .mavfront, .mavback {
@@ -262,8 +263,8 @@ h3 {
 }
 
 p {
-    margin: .75rem;
-    padding: .75rem;
+    padding: .5rem;
+    margin: .5rem;
     font-size: 1.2rem;
 }
 

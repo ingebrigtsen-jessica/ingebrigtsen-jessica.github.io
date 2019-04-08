@@ -31,7 +31,6 @@ function teamRequests(id, card) {
         let text = document.createTextNode(teamName);
         heading.appendChild(text);
         card.appendChild(heading);
-
         let ranking = document.createElement("P");
         text = document.createTextNode("Rank: " + team.rank);
         ranking.appendChild(text);
@@ -67,13 +66,10 @@ function nextGame(id, card) {
         if (games.homeTeam.ID == id) {
             text = document.createTextNode(games.homeTeam.City + " " + games.homeTeam.Name + " vs. " + games.awayTeam.City + " " + games.awayTeam.Name);
             nextGame.appendChild(text);
-
-
         }
         else {
             text = document.createTextNode(games.awayTeam.City + " " + games.awayTeam.Name + " @ " + games.homeTeam.City + " " + games.homeTeam.Name);
             nextGame.appendChild(text);
-
         }
 
         let tempDate = games.date;
