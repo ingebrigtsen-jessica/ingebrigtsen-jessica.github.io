@@ -14,10 +14,19 @@
 
 <body>
     <div class="header">
-        <img id="nbalogo" src="images/nbalogo.png">
+        <!-- <img id="nbalogo" src="images/nbalogo.png"> -->
         <a href="finalproject.html">
             <h1> Eastern Conference Standings</h1>
         </a>
+    </div>
+    <div class="nav">
+            <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()">&#9776;</a>
+
+        <div id="menuLinks">
+            <a href="eastern.html">Eastern</a>
+            <a href="western.html">Western</a>
+            <a href="#">Highlights</a>
+        </div>
     </div>
     <div id="container">
         <input type="text" id="searchList" onkeyup="searchFunction()" placeholder="Enter Team Name">
@@ -190,6 +199,7 @@
    
     <script src="scripts/flipped.js"></script>
     <script src="scripts/filter.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>

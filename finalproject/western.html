@@ -14,10 +14,18 @@
 
 <body>
     <div class="header">
-        <img id="nbalogo" src="images/nbalogo.png">
         <a href="finalproject.html">
             <h1> Western Conference Standings</h1>
         </a>
+    </div>
+    <div class="nav">
+        <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()">&#9776;</a>
+
+        <div id="menuLinks">
+            <a href="eastern.html">Eastern</a>
+            <a href="western.html">Western</a>
+            <a href="#">Highlights</a>
+        </div>
     </div>
     <div id="container">
 
@@ -34,7 +42,6 @@
             </div>
         </div>
 
-
         <div class="card" onclick="flipped(1, document.getElementById('nugstats'),99)">
             <div class="front nugfront">
                 <h2>Denver Nuggets</h2>
@@ -45,7 +52,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="card" onclick="flipped(2, document.getElementById('warriorstats'),101)">
             <div class="front warriorfront">
@@ -193,6 +199,7 @@
 
     <script src="scripts/flipped.js"></script>
     <script src="scripts/filter.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>
