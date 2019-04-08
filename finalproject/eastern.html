@@ -19,12 +19,13 @@
             <h1> Eastern Conference Standings</h1>
         </a>
     </div>
-    <div class="container">
+    <div id="container">
+        <input type="text" id="searchList" onkeyup="searchFunction()" placeholder="Enter Team Name">
 
         <div class="card" onclick="flipped(0, document.getElementById('hawkstats'),91)">
             <div class="front hawksfront">
                 <h2>Atlanta Hawks</h2>
-                <img class="icons" src="images/hawksicon.png">
+                <img class="icons smaller" src="images/hawksicon.png">
             </div>
             <div class="back hawksback">
                 <div class="statInfo" id="hawkstats">
@@ -35,7 +36,7 @@
         <div class="card" onclick="flipped(1, document.getElementById('celticstats'),82)">
             <div class="front celticsfront">
                 <h2>Boston Celtics</h2>
-                <img class="icons" src="images/celticsicon.png">
+                <img class="icons smaller" src="images/celticsicon.png">
             </div>
             <div class="back celticsback">
                 <div class="statInfo" id="celticstats">
@@ -112,7 +113,7 @@
         <div class="card" onclick="flipped(8, document.getElementById('heatstats'),92)">
             <div class="front heatfront">
                 <h2>Miami Heat</h2>
-                <img class="icons heatpic" src="images/heaticon.png">
+                <img class="icons larger" src="images/heaticon.png">
             </div>
             <div class="back heatback">
                 <div class="statInfo" id="heatstats">
@@ -123,7 +124,7 @@
         <div class="card" onclick="flipped(9, document.getElementById('buckstats'),90)">
             <div class="front bucksfront">
                 <h2>Milwaukie Bucks</h2>
-                <img class="icons buckpic" src="images/bucksicon.png">
+                <img class="icons smaller" src="images/bucksicon.png">
             </div>
             <div class="back bucksback">
                 <div class="statInfo" id="buckstats">
@@ -145,7 +146,7 @@
         <div class="card" onclick="flipped(11, document.getElementById('magicstats'),95)">
             <div class="front magicfront">
                 <h2>Orlando Magic</h2>
-                <img class="icons" src="images/magicicon.png">
+                <img class="icons larger" src="images/magicicon.png">
             </div>
             <div class="back magicback">
                 <div class="statInfo" id="magicstats">
@@ -178,7 +179,7 @@
         <div class="card" onclick="flipped(14, document.getElementById('wizardstats'),94)">
             <div class="front wizardsfront">
                 <h2>Washington Wizards</h2>
-                <img class="icons" src="images/wizardsicon.png">
+                <img class="icons .larger" src="images/wizardsicon.png">
             </div>
             <div class="back wizardsback">
                 <div class="statInfo" id="wizardstats">
@@ -186,9 +187,9 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
+   
     <script src="scripts/flipped.js"></script>
+    <script src="scripts/filter.js"></script>
 </body>
 
 </html>

@@ -19,8 +19,9 @@
             <h1> Western Conference Standings</h1>
         </a>
     </div>
-    <div class="container">
+    <div id="container">
 
+        <input type="text" id="searchList" onkeyup="searchFunction()" placeholder="Enter Team Name">
 
         <div class="card" onclick="flipped(0, document.getElementById('mavstats'), 108)">
             <div class="front mavfront">
@@ -189,9 +190,9 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
+
     <script src="scripts/flipped.js"></script>
+    <script src="scripts/filter.js"></script>
 </body>
 
 </html>
