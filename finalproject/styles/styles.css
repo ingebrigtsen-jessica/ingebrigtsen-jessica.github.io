@@ -83,3 +83,18 @@ button {
 .east a {
     text-decoration: none;
 }
+
+/**************All Star**************/
+.allstar {
+    margin-top: 3rem;
+    border: dashed 1px #F28D0B;
+}
+
+.allstar h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.allstar a {
+    text-decoration: none;
+}
