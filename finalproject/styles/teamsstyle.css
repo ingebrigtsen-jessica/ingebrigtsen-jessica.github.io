@@ -98,6 +98,7 @@ a {
     position: relative;
     border-radius: 10%;
     display: inline-flex;
+   
 }
 
 .front, .back {
@@ -266,7 +267,7 @@ h3 {
 p {
     padding: .5rem;
     margin: .5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .smaller {
